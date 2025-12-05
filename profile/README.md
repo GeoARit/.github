@@ -56,25 +56,61 @@ Below is a simple high-level relationship diagram showing the four key pillars o
 
 ---
 
-## 🧩 Venue / Hotspot / Properties / Prefab relationship
+## 🧩 Venue / Hotspot / Hotspot Properties / Prefab relationship
 
 ```mermaid
 flowchart TD
 
-    %% Nodes
-    VENUE["VENUE"]
-    HOTSPOT["HOTSPOT"]
-    HOTSPOTPROPERTY["HOTSPOT PROPERTIES"]
-    PREFAB["PREFAB"]
+    VENUE["<u>📍 VENUE</u>"]
+    HOTSPOT["<u>🔥 HOTSPOT</u>"]
+    HOTSPOTPROPERTY["<u>🧩 HOTSPOT PROPERTIES</u>"]
+    PREFAB["<u>🎨 PREFAB</u>"]
 
-    %% Vertical Layout
     VENUE --> HOTSPOT
     HOTSPOT --> HOTSPOTPROPERTY
     HOTSPOT --> PREFAB
 
-    %% Clickable Links
-    click VENUE "https://geoar.it/help#category-Venue-Properties" "View Venue Properties"
-    click HOTSPOTPROPERTY "https://geoar.it/help#category-Hotspot-Properties" "View Hotspot Properties"
-    click PREFAB "https://geoar.it/help#category-Prefab-Properties" "View Prefab Properties"
+    %% Hyperlinks
+    click VENUE "https://geoar.it/help#category-Venue-Properties" "_blank"
+    click HOTSPOT "https://geoar.it/help#category-Hotspot-Properties" "_blank"
+    click HOTSPOTPROPERTY "https://geoar.it/help#category-Hotspot-Properties" "_blank"
+    click PREFAB "https://geoar.it/help#category-Prefab-Properties" "_blank"
+
+```
+
+## 🧩 Website
+
+```mermaid
+flowchart LR
+
+    MAIN["<u>MAIN MENU</u>"]
+
+    MAIN --> LOGIN["<u>🔑 Log in / Register</u>"]
+    MAIN --> HOME["<u>🏡 Home</u>"]
+    MAIN --> VENUES["<u>📍 Venues</u>"]
+    MAIN --> MAP["<u>🗺️ Map</u>"]
+    MAIN --> TRANSPORT["<u>✈️ Transport</u>"]
+    MAIN --> WORLDS["<u>🌌 MetARverse® Worlds</u>"]
+    MAIN --> API["<u>📀 API</u>"]
+    MAIN --> HELP["<u>📁 Help</u>"]
+    MAIN --> FACEBOOK["<u>👀 Facebook</u>"]
+    MAIN --> QUOTES["<u>📋 Quotes</u>"]
+    MAIN --> FEEDBACK["<u>✍️ Feedback</u>"]
+    MAIN --> PRIVACY["<u>🔐 Privacy</u>"]
+    MAIN --> TERMS["<u>📔 T&amp;C</u>"]
+
+    click LOGIN "https://geoar.it/account/login" "_blank"
+    click HOME "https://geoar.it" "_blank"
+    click VENUES "https://geoar.it/venues" "_blank"
+    click MAP "https://geoar.it/map" "_blank"
+    click TRANSPORT "https://geoar.it/infrastructure/transport?slug=transport" "_blank"
+    click WORLDS "https://geoar.it/worlds" "_blank"
+    click API "https://geoar.it/api" "_blank"
+    click HELP "https://geoar.it/help" "_blank"
+    click FACEBOOK "https://facebook.com/Metaverse.Ian.Foster" "_blank"
+    click QUOTES "https://geoar.it/quotes" "_blank"
+    click FEEDBACK "https://geoar.it/feedback" "_blank"
+    click PRIVACY "https://geoar.it/privacy" "_blank"
+    click TERMS "https://geoar.it/terms" "_blank"
 
 ```
