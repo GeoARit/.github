@@ -80,7 +80,6 @@ flowchart TD
 
 ## 🧩 Website
 
-```mermaid
 # 🌍 GeoAR.it — A Human-Centred Spatial Platform
 
 GeoAR.it is a deeply personal, human-first platform built to help people navigate the real world with clarity, context, and emotional support. It blends **geospatial awareness**, **augmented reality**, and **AI companionship** into a gentle, meaningful digital layer designed to sit alongside everyday life — not replace it.
@@ -223,6 +222,10 @@ flowchart LR
     click HS_MISC "https://geoar.it/help" _blank
     click HS_MAPS "https://geoar.it/help#category-Maps-Blog-Docs" _blank
     click HS_INVESTOR "https://geoar.it/help#category-Investor-Blog" _blank
+
+    click HO_OVERVIEW "https://geoar.it/help/12/Hotspot-overview" _blank
+    click VENUE_ADD_GOOGLE "https://geoar.it/help/28/Add-local-venues-to-your-Google-calendar" _blank
+    click API_ENDPOINTS "https://geoar.it/help/Api/Endpoints" _blank
 
     click HO_OVERVIEW "https://geoar.it/help/12/Hotspot-overview" _blank
     click VENUE_ADD_GOOGLE "https://geoar.it/help/28/Add-local-venues-to-your-Google-calendar" _blank
