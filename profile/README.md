@@ -98,7 +98,7 @@ flowchart TD
 %% ========================
 %% VENUE
 %% ========================
-VENUE["<u><b>Venue</b></u><br/>🏌️ Acme Golf Course"]
+VENUE["<u><b>Venue</b></u><br/>🏌️ Geordie Genie Golf Course"]
 click VENUE "https://geoar.it/help#category-Venue-Properties" _blank
 
 %% ========================
@@ -108,11 +108,11 @@ click VENUE "https://geoar.it/help#category-Venue-Properties" _blank
 HS1["<u><b>Hotspot</b></u><br/>⛳ Hole 1 – Shearer’s Creek"]
 click HS1 "https://geoar.it/help#category-Hotspot-Properties" _blank
 
-HS2["<u><b>Hotspot</b></u><br/>⛳ Hole 2 – Tyne Bridge Drive"]
+HS2["<u><b>Hotspot</b></u><br/>⛳ Hole 2 – Tyne Bridge"]
 click HS2 "https://geoar.it/help#category-Hotspot-Properties" _blank
 
 %% ---- UPDATED HOLE 3 ----
-HS3["<u><b>Hotspot</b></u><br/>⛳ Hole 3 – Wor Flags Fairway<br/><br/><b>Attention</b><br/>Out of Action<br/>Waterlogged"]
+HS3["<u><b>Hotspot</b></u><br/>⛳ Hole 3 – Pasty Suprise<br/><br/><b>Attention</b><br/>Out of Action<br/>Waterlogged"]
 click HS3 "https://geoar.it/help#category-Hotspot-Properties" _blank
 
 VENUE --> HS1
