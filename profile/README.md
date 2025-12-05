@@ -45,33 +45,6 @@ He can remember things for you, keep you safe, point you towards meaningful plac
 
 ---
 
-## 🧬 The MetARverse (Semantic Life Layer)
-
-The **MetARverse** is not a game world.  
-It’s a **semantic layer of human experience** — a structure where:
-
-- feelings  
-- events  
-- memories  
-- preferences  
-- interactions  
-- and locations  
-
-are encoded in a standardised, machine-readable way so an AI agent can develop *real* understanding rather than hallucinations.
-
-The MetARverse lets a user say:
-
-- “This place makes me feel calm.”  
-- “I’m scared of deep water.”  
-- “My happy memory happened right here.”  
-
-And the system remembers — respectfully, privately, meaningfully.
-
-This is **not another Uncanny Valley platform**.  
-This is technology built around *human truth*.
-
----
-
 ## 🗺️ Core Spatial Entities
 
 Below is a simple high-level relationship diagram showing the four key pillars of the GeoAR.it spatial layer:
