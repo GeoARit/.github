@@ -98,7 +98,7 @@ flowchart TD
 %% ========================
 %% VENUE
 %% ========================
-VENUE["<u><b>Venue</b></u><br/>🏌️ Acme Golf Course (Venue 7)"]
+VENUE["<u><b>Venue</b></u><br/>🏌️ Acme Golf Course"]
 click VENUE "https://geoar.it/help#category-Venue-Properties" _blank
 
 %% ========================
