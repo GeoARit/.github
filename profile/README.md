@@ -263,13 +263,3 @@ flowchart LR
     click VENUE_ADD_GOOGLE "https://geoar.it/help/28/Add-local-venues-to-your-Google-calendar" _blank
     click API_ENDPOINTS "https://geoar.it/help/Api/Endpoints" _blank
 ```
-
-
-    click HS_MARKER "https://geoar.it/help#category-Marker-Documentation" _blank
-    click HS_MISC "https://geoar.it/help" _blank
-    click HS_MAPS "https://geoar.it/help#category-Maps-Blog-Docs" _blank
-    click HS_INVESTOR "https://geoar.it/help#category-Investor-Blog" _blank
-
-    click HO_OVERVIEW "https://geoar.it/help/12/Hotspot-overview" _blank
-    click VENUE_ADD_GOOGLE "https://geoar.it/help/28/Add-local-venues-to-your-Google-calendar" _blank
-    click API_ENDPOINTS "https://geoar.it/help/Api/Endpoints" _blank
