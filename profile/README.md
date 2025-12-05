@@ -1,17 +1,14 @@
-# 🌍 GeoAR.it — A Human-Centred Spatial Platform
+# 🧠👓🌍 **GeoNeuroSpatial Engine**
 
-GeoAR.it is a **human-first platform** built to help people navigate the real world with clarity and context.  
-It blends **geospatial awareness**, **augmented reality**, and **AI companionship** into a gentle, meaningful digital layer designed to sit alongside everyday life — not replace it.
+GeoAR.it is built on a simple belief: technology should help people move through the world with clarity, confidence, and emotional grounding.  
+It blends **geospatial awareness**, **augmented reality**, and **AI companionship** into a calm, meaningful digital layer — something that enhances everyday life without intruding on it.
 
-At its heart, GeoAR.it is about **people**:  
-what they feel, where they are, and how technology can quietly help rather than overwhelm.
+At its core, the system is about **humans**:  
+what they feel, where they stand, and how intelligence can support them quietly, intuitively, and with empathy.
 
----
-
-## 💠 GeoNeuroSpatial Engine
-
-These three layers **combine to form the GeoNeuroSpatial Engine** — a system where the human layer, the world layer, and the meaning layer work together to transform physical life into something understandable, navigable, predictive, and emotionally aware.
-
+All of this converges into the **GeoNeuroSpatial Engine** — the fusion of the human layer, the world layer, and the semantic meaning layer.  
+Together they create a spatial intelligence that turns physical life into something understandable, navigable, predictive, and emotionally aware —  
+**running on-edge to protect the user’s privacy and keep their world truly their own.**
 
 ```mermaid
 flowchart TD
@@ -145,6 +142,7 @@ HS2 --> HS2_P1 --> HS2_P2 --> HS2_P3 --> HS2_P4 --> HS2_P5
 ```
 
 ---
+## 🧩 Hotspot Properties
 
 ```mermaid
 flowchart LR
@@ -196,7 +194,7 @@ flowchart LR
 ```
 ---
 
-## 🧩 Website Menu Options
+## 🧩 Website Menu 
 
 ```mermaid
 flowchart LR
