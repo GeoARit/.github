@@ -1,91 +1,42 @@
 # 🌍 GeoAR.it — A Human-Centred Spatial Platform
 
-GeoAR.it is a deeply personal, human-first platform built to help people navigate the real world with clarity, context, and emotional support. It blends **geospatial awareness**, **augmented reality**, and **AI companionship** into a gentle, meaningful digital layer designed to sit alongside everyday life — not replace it.
+GeoAR.it is a **human-first platform** built to help people navigate the real world with clarity and context.  
+It blends **geospatial awareness**, **augmented reality**, and **AI companionship** into a gentle, meaningful digital layer designed to sit alongside everyday life — not replace it.
 
 At its heart, GeoAR.it is about **people**:  
 what they feel, where they are, and how technology can quietly help rather than overwhelm.
 
 ---
 
-## 💠 What GeoAR.it Is
+## 💠 The Three Layers of the Platform
 
-GeoAR.it is the foundation layer of the **MetARverse** — a world where:
-
-- places have meaning,  
-- memories attach to locations,  
-- AI understands context rather than guessing,  
-- and the digital world complements real life.
-
-It provides:
-
-- A **real-time digital twin** of the UK  
-- **Hyperlocal awareness** (what’s around you right now)  
-- **Anchors** for venues, hotspots, objects, memories, and interactions  
-- A structured, meaningful data layer for AI agents to understand human experience  
-
-Everything begins with the platform’s simple building blocks:
-
-**Venue → Hotspot → Hotspot Properties → Prefab**  
-Each one is an anchor point in the real world that the AI and AR layers can attach meaning to.
-
----
-
-## 🧞 Geordie Genie — Your Companion in the MetARverse
-
-Geordie Genie represents the human side of the platform:  
-a warm, local, emotionally intelligent character who helps guide the user through their surroundings with humour, empathy, and awareness.
-
-He is the bridge between:
-
-- the real world,  
-- the digital twin, and  
-- the user’s emotional state.
-
-He can remember things for you, keep you safe, point you towards meaningful places, and help encode your experiences using the **MetARverse Semantic Event Protocol**.
-
----
-
-## 🗺️ Core Spatial Entities
-
-Below is a simple high-level relationship diagram showing the four key pillars of the GeoAR.it spatial layer:
-
-- **Venue** — A real-world location (pub, park, shop, station).  
-- **Hotspot** — A point or object placed within or near a venue.  
-- **Hotspot Properties** — Metadata that describes a hotspot’s behaviour, type, or attributes.  
-- **Prefab** — A 3D/AR asset associated with a hotspot (e.g., line navigation arrow, portal, sign, object).
-
----
-
-## 🧩 Venue / Hotspot / Hotspot Properties / Prefab relationship
+These are the three pillars of the system — the human layer, the world layer, and the meaning layer — working together to turn physical life into something understandable, navigable, and emotionally aware.
 
 ```mermaid
 flowchart TD
 
-    VENUE["<u>📍 VENUE</u>"]
-    HOTSPOT["<u>🔥 HOTSPOT</u>"]
-    HOTSPOTPROPERTY["<u>🧩 HOTSPOT PROPERTIES</u>"]
-    PREFAB["<u>🎨 PREFAB</u>"]
+    GEONEURO["<u>🧠 GeoNeuroSpatial Engine</u>"]
 
-    VENUE --> HOTSPOT
-    HOTSPOT --> HOTSPOTPROPERTY
-    HOTSPOT --> PREFAB
+    GENIE["<u>🤖 Geordie Genie® – Companion Layer</u><br/>A digital twin of <i>you</i> – humour, emotions, memories, values, patterns, intentions."]
+    REALITY["<u>🌍 GeoAR.it® – Reality Layer</u><br/>A digital twin of the UK – factual, geospatial, infrastructural, live, layered, localised, and open."]
+    LIFE["<u>🌈 MetARverse® – Life Layer</u><br/>A semantic, spatial life layer where moods, moments, and memories become part of the world around you."]
 
-    %% Hyperlinks
-    click VENUE "https://geoar.it/help#category-Venue-Properties" "_blank"
-    click HOTSPOT "https://geoar.it/help#category-Hotspot-Properties" "_blank"
-    click HOTSPOTPROPERTY "https://geoar.it/help#category-Hotspot-Properties" "_blank"
-    click PREFAB "https://geoar.it/help#category-Prefab-Properties" "_blank"
-
+    GEONEURO --> GENIE
+    GEONEURO --> REALITY
+    GEONEURO --> LIFE
 ```
 
-## 🧩 Website
+### 🤖 **Geordie Genie® — Companion Layer**  
+A Digital Twin of **you** — your humour, emotions, context, memories, values, patterns, and intentions.  
+This is the human interface of the system: warm, local, emotionally intelligent guidance that understands who you are.
 
-# 🌍 GeoAR.it — A Human-Centred Spatial Platform
+### 🌍 **GeoAR.it® — Reality Layer**  
+A Digital Twin of the **UK** — factual, geospatial, infrastructural, live, layered, localised, and open.  
+This is the real-world substrate the AI stands on.
 
-GeoAR.it is a deeply personal, human-first platform built to help people navigate the real world with clarity, context, and emotional support. It blends **geospatial awareness**, **augmented reality**, and **AI companionship** into a gentle, meaningful digital layer designed to sit alongside everyday life — not replace it.
-
-At its heart, GeoAR.it is about **people**:  
-what they feel, where they are, and how technology can quietly help rather than overwhelm.
+### 🌈 **MetARverse® — Life Layer**  
+A semantic, spatial life layer where moods, moments and memories become part of the world around you.  
+This is where your lived experience becomes structured meaning for AI.
 
 ---
 
@@ -153,12 +104,13 @@ flowchart TD
     HOTSPOT --> PREFAB
 
     %% Hyperlinks
-    click VENUE "https://geoar.it/help#category-Venue-Properties" "_blank"
-    click HOTSPOT "https://geoar.it/help#category-Hotspot-Properties" "_blank"
-    click HOTSPOTPROPERTY "https://geoar.it/help#category-Hotspot-Properties" "_blank"
-    click PREFAB "https://geoar.it/help#category-Prefab-Properties" "_blank"
-
+    click VENUE "https://geoar.it/help#category-Venue-Properties" _blank
+    click HOTSPOT "https://geoar.it/help#category-Hotspot-Properties" _blank
+    click HOTSPOTPROPERTY "https://geoar.it/help#category-Hotspot-Properties" _blank
+    click PREFAB "https://geoar.it/help#category-Prefab-Properties" _blank
 ```
+
+---
 
 ## 🧩 Website
 
@@ -226,12 +178,3 @@ flowchart LR
     click HO_OVERVIEW "https://geoar.it/help/12/Hotspot-overview" _blank
     click VENUE_ADD_GOOGLE "https://geoar.it/help/28/Add-local-venues-to-your-Google-calendar" _blank
     click API_ENDPOINTS "https://geoar.it/help/Api/Endpoints" _blank
-
-    click HO_OVERVIEW "https://geoar.it/help/12/Hotspot-overview" _blank
-    click VENUE_ADD_GOOGLE "https://geoar.it/help/28/Add-local-venues-to-your-Google-calendar" _blank
-    click API_ENDPOINTS "https://geoar.it/help/Api/Endpoints" _blank
-    click FEEDBACK "https://geoar.it/feedback" "_blank"
-    click PRIVACY "https://geoar.it/privacy" "_blank"
-    click TERMS "https://geoar.it/terms" "_blank"
-
-```
