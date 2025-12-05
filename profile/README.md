@@ -8,9 +8,10 @@ what they feel, where they are, and how technology can quietly help rather than 
 
 ---
 
-## 💠 The Three Layers of the Platform
+## 💠 GeoNeuroSpatial Engine
 
-These are the three pillars of the system — the human layer, the world layer, and the meaning layer — working together to turn physical life into something understandable, navigable, and emotionally aware.
+These three layers **combine to form the GeoNeuroSpatial Engine** — a system where the human layer, the world layer, and the meaning layer work together to transform physical life into something understandable, navigable, predictive, and emotionally aware.
+
 
 ```mermaid
 flowchart TD
@@ -94,25 +95,108 @@ Below is a simple high-level relationship diagram showing the four key pillars o
 ```mermaid
 flowchart TD
 
-    VENUE["<u>📍 VENUE</u>"]
-    HOTSPOT["<u>❌ HOTSPOT</u>"]
-    HOTSPOTPROPERTY["<u>🧩 HOTSPOT PROPERTIES</u>"]
-    PREFAB["<u>🧊 PREFAB</u>"]
+%% ========================
+%% VENUE
+%% ========================
+VENUE["<u><b>Venue</b></u><br/>🏌️ Acme Golf Course (Venue 7)"]
+click VENUE "https://geoar.it/help#category-Venue-Properties" _blank
 
-    VENUE --> HOTSPOT
-    HOTSPOT --> HOTSPOTPROPERTY
-    HOTSPOT --> PREFAB
+%% ========================
+%% HOLE HOTSPOTS (1, 2, 3)
+%% ========================
 
-    %% Hyperlinks
-    click VENUE "https://geoar.it/help#category-Venue-Properties" _blank
-    click HOTSPOT "https://geoar.it/help#category-Hotspot-Properties" _blank
-    click HOTSPOTPROPERTY "https://geoar.it/help#category-Hotspot-Properties" _blank
-    click PREFAB "https://geoar.it/help#category-Prefab-Properties" _blank
+HS1["<u><b>Hotspot</b></u><br/>⛳ Hole 1 – Shearer’s Creek"]
+click HS1 "https://geoar.it/help#category-Hotspot-Properties" _blank
+
+HS2["<u><b>Hotspot</b></u><br/>⛳ Hole 2 – Tyne Bridge Drive"]
+click HS2 "https://geoar.it/help#category-Hotspot-Properties" _blank
+
+%% ---- UPDATED HOLE 3 ----
+HS3["<u><b>Hotspot</b></u><br/>⛳ Hole 3 – Wor Flags Fairway<br/><br/><b>Attention</b><br/>Out of Action<br/>Waterlogged"]
+click HS3 "https://geoar.it/help#category-Hotspot-Properties" _blank
+
+VENUE --> HS1
+VENUE --> HS2
+VENUE --> HS3
+
+%% ========================
+%% PROPERTIES FOR EACH HOLE
+%% ========================
+
+%% ----- HOLE 1 Properties -----
+HS1_P1["<u><b>Property</b></u><br/>🔣 Avg Score (Decimal Number)<br/><b>Value:</b> 4.16"]
+HS1_P2["<u><b>Property</b></u><br/>🔢 Eagles (Whole Number)<br/><b>Value:</b> 2"]
+HS1_P3["<u><b>Property</b></u><br/>🔢 Birdies (Whole Number)<br/><b>Value:</b> 23"]
+HS1_P4["<u><b>Property</b></u><br/>🔢 Pars (Whole Number)<br/><b>Value:</b> 278"]
+
+HS1 --> HS1_P1 --> HS1_P2 --> HS1_P3 --> HS1_P4
+
+%% ----- HOLE 2 Properties -----
+HS2_P1["<u><b>Property</b></u><br/>🔤 Golpher teeing off (Text)<br/><b>Value:</b> Lion Woods"]
+HS2_P2["<u><b>Property</b></u><br/>🔢 Top 10 (Whole Number)<br/><b>Value:</b> 3"]
+HS2_P3["<u><b>Property</b></u><br/>🔢 Points (Whole Number)<br/><b>Value:</b> 950"]
+HS2_P4["<u><b>Property</b></u><br/>🔣 Average score (Decimal Number)<br/><b>Value:</b> 66.989"]
+HS2_P5["<u><b>Property</b></u><br/>🔣 Driving accuracy (Decimal Number)<br/><b>Value:</b> 87.5%"]
+
+HS2 --> HS2_P1 --> HS2_P2 --> HS2_P3 --> HS2_P4 --> HS2_P5
+
+%% Hole 3 has no individual property boxes – text is embedded inside HS3.
+
 ```
 
 ---
 
-## 🧩 Website
+```mermaid
+flowchart LR
+
+    %% ========================
+    %% TITLE NODE
+    %% ========================
+    TITLE["<u><b>Property Data Types</b></u><br/>🧩 How hotspot properties store information"]
+
+    %% ========================
+    %% INDIVIDUAL PROPERTY TYPES
+    %% ========================
+
+    TEXT["🔤 <b>Text</b><br/><i>Free-form words & sentences</i>"]
+    NUMBER["🔢 <b>Whole Number</b><br/><i>Integer values</i>"]
+    HEXNUM["✳️ <b>Hex Number</b><br/><i>Hexadecimal numeric values</i>"]
+    DECIMAL["🔣 <b>Decimal Number</b><br/><i>Float / measurable values</i>"]
+
+    DATE["📅 <b>Date</b><br/><i>Calendar date</i>"]
+    TIME["⏰ <b>Time</b><br/><i>Time-of-day</i>"]
+    DATETIME["🕰️ <b>Date & Time</b><br/><i>Combined timestamp</i>"]
+
+    PHONE["📞 <b>Phone Number</b><br/><i>Contact number</i>"]
+    EMAIL["📧 <b>Email Address</b><br/><i>Email string</i>"]
+    URL["🔗 <b>URL</b><br/><i>Website link</i>"]
+    IMAGEURL["🖼️ <b>Image URL</b><br/><i>Referenced image file</i>"]
+
+    POSTCODE["🏣 <b>Postal Code</b><br/><i>UK postcode format</i>"]
+
+    %% ========================
+    %% CONNECTIONS
+    %% ========================
+
+    TITLE --> TEXT
+    TITLE --> NUMBER
+    TITLE --> HEXNUM
+    TITLE --> DECIMAL
+
+    TITLE --> DATE
+    TITLE --> TIME
+    TITLE --> DATETIME
+
+    TITLE --> PHONE
+    TITLE --> EMAIL
+    TITLE --> URL
+    TITLE --> IMAGEURL
+
+    TITLE --> POSTCODE
+```
+---
+
+## 🧩 Website Menu Options
 
 ```mermaid
 flowchart LR
@@ -170,6 +254,17 @@ flowchart LR
     click HS_API "https://geoar.it/help#category-Api-Documentation" _blank
     click HS_PINNED "https://geoar.it/help#category-Pinned-Blog" _blank
     click HS_PLATFORM "https://geoar.it/help#category-Platform-Documentation" _blank
+    click HS_MARKER "https://geoar.it/help#category-Marker-Documentation" _blank
+    click HS_MISC "https://geoar.it/help" _blank
+    click HS_MAPS "https://geoar.it/help#category-Maps-Blog-Docs" _blank
+    click HS_INVESTOR "https://geoar.it/help#category-Investor-Blog" _blank
+
+    click HO_OVERVIEW "https://geoar.it/help/12/Hotspot-overview" _blank
+    click VENUE_ADD_GOOGLE "https://geoar.it/help/28/Add-local-venues-to-your-Google-calendar" _blank
+    click API_ENDPOINTS "https://geoar.it/help/Api/Endpoints" _blank
+```
+
+
     click HS_MARKER "https://geoar.it/help#category-Marker-Documentation" _blank
     click HS_MISC "https://geoar.it/help" _blank
     click HS_MAPS "https://geoar.it/help#category-Maps-Blog-Docs" _blank
