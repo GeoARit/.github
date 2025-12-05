@@ -259,3 +259,41 @@ flowchart LR
     click VENUE_ADD_GOOGLE "https://geoar.it/help/28/Add-local-venues-to-your-Google-calendar" _blank
     click API_ENDPOINTS "https://geoar.it/help/Api/Endpoints" _blank
 ```
+
+----
+
+## 🧩 MetARverse® Worlds
+```mermaid
+graph LR
+    A["<u>MetARverse® Worlds</u>"] --> B["<u>📍 AR Information</u>"]
+    A --> C["<u>🎮 AR Games</u>"]
+    A --> D["<u>🕶️ AR Experiences</u>"]
+    A --> E["<u>🌀 AR Fantasy Portal</u>"]
+    A --> F["<u>🎨 AR Art</u>"]
+    A --> G["<u>🎥 Cinematic Worlds</u>"]
+    A --> H["<u>🌐 MCP World Layer</u>"]
+    A --> I["<u>🛠️ AR Tools World</u>"]
+    A --> J["<u>📸 MetARverse Moment Layer</u>"]
+
+    %% AR Information Subitems
+    B --> B2[🚌 Bus · Train · Underground Info]
+    B --> B3[🚓 Historical Crime Hotspots]
+    B --> B4[🏡 Sale & Rental Property Details]
+    B --> B5[📮 View Postcodes & Property IDs]
+    B --> B6[🔌 Find Nearest EV Chargepoint]
+    B --> B7[🎵 Gigs · Clubs · Festivals]
+    B --> B8[🚗 AutoPi Telemetrics Integration]
+
+    %% Clickable Links (Absolute URLs)
+    click A "https://geoar.it/worlds/ARInformation" "_self"
+    click B "https://geoar.it/worlds/ARInformation" "_self"
+    click C "https://geoar.it/worlds/ARGame" "_self"
+    click D "https://geoar.it/worlds/ARExperience" "_self"
+    click E "https://geoar.it/worlds/ARPortal" "_self"
+    click F "https://geoar.it/worlds/ARArtWork" "_self"
+    click G "https://geoar.it/worlds/VRCinematic" "_self"
+    click H "https://geoar.it/worlds/MCP" "_self"
+    click I "https://geoar.it/worlds/Tools" "_self"
+    click J "https://geoar.it/worlds/Moments" "_self"
+
+```
