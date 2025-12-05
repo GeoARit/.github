@@ -3,12 +3,10 @@
 GeoAR.it is built on a simple belief: technology should help people move through the world with clarity, confidence, and emotional grounding.  
 It blends **geospatial awareness**, **augmented reality**, and **AI companionship** into a calm, meaningful digital layer — something that enhances everyday life without intruding on it.
 
-At its core, the system is about **humans**:  
-what they feel, where they stand, and how intelligence can support them quietly, intuitively, and with empathy.
+At its core, the system is about **humans**: what they feel, where they stand, and how intelligence can support them quietly, intuitively, and with empathy.
 
 All of this converges into the **GeoNeuroSpatial Engine** — the fusion of the human layer, the world layer, and the semantic meaning layer.  
-Together they create a spatial intelligence that turns physical life into something understandable, navigable, predictive, and emotionally aware —  
-**running on-edge to protect the user’s privacy and keep their world truly their own.**
+Together they create a spatial intelligence that turns physical life into something understandable, navigable, predictive, and emotionally aware —  **running on-edge to protect the user’s privacy and keep their world truly their own.**
 
 ```mermaid
 flowchart TD
