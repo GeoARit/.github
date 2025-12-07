@@ -99,61 +99,75 @@ Below is a simple high-level relationship diagram showing the four key pillars o
 
 ## 🏡 Venue / ❌ Hotspot / 🧩 Hotspot Properties / 🧊 Prefab relationship
 
-In the MetARverse, real-world locations flow through a clear semantic chain: **venues define the space**, **hotspots define the meaningful points within that space**, **hotspot properties define the live truth of those points**, and **Unity prefabs give those hotspots a visual and interactive form inside AR**. A venue such as a festival ground or golf course may contain dozens of hotspots, each mapped to a specific physical coordinate. Every hotspot carries one or more hotspot properties which describe its real-time state — such as taxis arriving, medics available, stock levels at a food van, or performers scheduled on a stage. These properties can update automatically through backend systems or AI agents belonging to the venue owner. In Unity, each hotspot is represented by a prefab that can show icons, labels, UI panels, animations, or 3D elements, allowing the information to surface visually in the user’s AR view. This creates a seamless pipeline where real-world data flows into hotspots, hotspot properties inform the AI and AR layers, and Unity prefabs physically display those changes — turning the real world into a responsive, data-rich interface.
+In the MetARverse, real-world locations move through a disciplined semantic chain: venues define the space, hotspots define the meaningful points within that space, and hotspot properties reveal the live truth of those points. A venue such as a festival ground or golf course may contain dozens of hotspots, each anchored to a specific physical coordinate. Every hotspot carries one or more hotspot properties describing its real-time state — taxis arriving, medics available, stock levels at a food van, attention warnings, performer schedules, or environmental conditions.
+
+These properties update automatically through backend systems, IoT feeds, or AI agents acting on behalf of the venue owner. As those updates flow through the platform, hotspots become living data entities, capable of informing navigation, recommendations, safety alerts, crowd modelling, and personalised experiences. This creates a seamless pipeline where real-world events become structured data, structured data becomes semantic meaning, and semantic meaning becomes a responsive, data-rich layer over the physical world. The MetARverse transforms everyday locations into intelligent, context-aware, emotionally and operationally expressive spaces.
 
 ```mermaid
-flowchart TD
+flowchart LR
 
 %% ========================
 %% VENUE
 %% ========================
-VENUE["<u><b>🏡 - Venue</b></u><br/>Geordie Genie Golf Course"]
+VENUE["<u><b>🏡 – Venue</b></u><br/>Geordie Genie Golf Course"]
 click VENUE "https://geoar.it/help#category-Venue-Properties" _blank
 
 %% ========================
 %% HOTSPOTS
 %% ========================
-HS1["<u><b>❌ - Hotspot</b></u><br/>⛳ Hole 1 – Shearer’s Creek"]
-HS2["<u><b>❌ - Hotspot</b></u><br/>⛳ Hole 2 – Tyne Bridge"]
-HS3["<u><b>❌ - Hotspot</b></u><br/>⛳ Hole 3 – Pasty Suprise<br/><br/><b>Attention</b><br/>Out of Action<br/>Waterlogged"]
+HS1["<u><b>❌ – Hotspot</b></u><br/>Hole 1 – Shearer’s Creek"]
+click HS1 "https://geoar.it/help#category-Hotspot-Properties" _blank
+
+HS2["<u><b>❌ – Hotspot</b></u><br/>Hole 2 – Tyne Bridge"]
+click HS2 "https://geoar.it/help#category-Hotspot-Properties" _blank
 
 VENUE --> HS1
 VENUE --> HS2
-VENUE --> HS3
 
+%% ========================
 %% PREFAB
-PREFAB["<u><b>🧊 - Prefab</b></u><br/>Golf Hole Prefab<br/>3D Model"]
+%% ========================
+PREFAB["<u><b>🧊 – Prefab</b></u><br/>Golf Hole Prefab<br/>3D Model"]
 HS1 --> PREFAB
 HS2 --> PREFAB
-HS3 --> PREFAB
 
+%% ========================
 %% PROPERTIES FOR HOLE 1
-HS1_P1["🧩 <b>Avg Score</b><br/>4.16"]
-HS1_P2["🧩 <b>Eagles</b><br/>2"]
-HS1_P3["🧩 <b>Birdies</b><br/>23"]
-HS1_P4["🧩 <b>Pars</b><br/>278"]
+%% ========================
+subgraph HS1_PROPS ["<b>🧩 – Properties</b><br/>Hole 1"]
+    HS1_P1["🧩 <b>Avg Score</b><br/>4.16"]
+    HS1_P2["🧩 <b>Eagles</b><br/>2"]
+    HS1_P3["🧩 <b>Birdies</b><br/>23"]
+    HS1_P4["🧩 <b>Pars</b><br/>278"]
+end
 
-HS1 --> HS1_P1 --> HS1_P2 --> HS1_P3 --> HS1_P4
+HS1 --> HS1_PROPS
 
+%% ========================
 %% PROPERTIES FOR HOLE 2
-HS2_P1["🧩 <b>Golfer teeing off</b><br/>Lion Woods"]
-HS2_P2["🧩 <b>Top 10</b><br/>3"]
-HS2_P3["🧩 <b>Points</b><br/>950"]
-HS2_P4["🧩 <b>Average score</b><br/>66.989"]
-HS2_P5["🧩 <b>Driving accuracy</b><br/>87.5%"]
+%% ========================
+subgraph HS2_PROPS ["<b>🧩 – Properties</b><br/>Hole 2"]
+    HS2_P1["🧩 <b>Golfer teeing off</b><br/>Lion Woods"]
+    HS2_P2["🧩 <b>Top 10</b><br/>3"]
+    HS2_P3["🧩 <b>Points</b><br/>950"]
+    HS2_P4["🧩 <b>Average score</b><br/>66.989"]
+    HS2_P5["🧩 <b>Driving accuracy</b><br/>87.5%"]
+end
 
-HS2 --> HS2_P1 --> HS2_P2 --> HS2_P3 --> HS2_P4 --> HS2_P5
+HS2 --> HS2_PROPS
 
 %% ========================
-%% PROPERTY TYPES USED (BOLD TITLE)
+%% PROPERTY TYPES USED
 %% ========================
-subgraph PROP_TYPES ["<b>🧩 Property Types Used</b>"]
+subgraph PROP_TYPES ["<b>🧩 – Property Types Used</b>"]
     TYPE_TEXT["🔤 Text"]
     TYPE_NUM["🔢 Number"]
     TYPE_DEC["🔣 Decimal Number"]
 end
 
+%% ========================
 %% MAPPINGS
+%% ========================
 HS1_P1 --> TYPE_DEC
 HS1_P2 --> TYPE_NUM
 HS1_P3 --> TYPE_NUM
