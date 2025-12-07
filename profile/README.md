@@ -21,17 +21,13 @@ flowchart TD
     GEONEURO --> LIFE
 ```
 
-### 🤖 **Geordie Genie® — Companion Layer**  
-A Digital Twin of **you** — your humour, emotions, context, memories, values, patterns, and intentions.  
-This is the human interface of the system: warm, local, emotionally intelligent guidance that understands who you are.
+### 🧠 The Three-Layer MetARverse System
 
-### 🌍 **GeoAR.it® — Reality Layer**  
-A Digital Twin of the **UK** — factual, geospatial, infrastructural, live, layered, localised, and open.  
-This is the real-world substrate the AI stands on.
-
-### 🌈 **MetARverse® — Life Layer**  
-A semantic, spatial life layer where moods, moments and memories become part of the world around you.  
-This is where your lived experience becomes structured meaning for AI.
+| Layer | Description | Purpose |
+|-------|-------------|---------|
+| 🤖 **Geordie Genie® — Companion Layer** | A Digital Twin of **you** — your humour, emotions, context, memories, values, patterns, and intentions. | Provides warm, local, emotionally intelligent guidance. Acts as the human-facing interface of the system. |
+| 🌍 **GeoAR.it® — Reality Layer** | A Digital Twin of the **UK** — factual, geospatial, infrastructural, live, layered, localised, and open. | Serves as the real-world substrate the AI stands on. Provides grounded truth and geospatial context. |
+| 🌈 **MetARverse® — Life Layer** | A semantic, spatial life layer where moods, moments and memories become part of the world around you. | Converts lived experience into structured meaning for AI. Powers emotional, behavioural, and contextual reasoning. |
 
 ---
 
