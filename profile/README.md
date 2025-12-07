@@ -83,14 +83,14 @@ Below is a simple high-level relationship diagram showing the four key pillars o
 - **Prefab** — A 3D/AR asset associated with a hotspot  
 
 ---
+release in 2026.
 
-## 🧩 Venue / Hotspot / Hotspot Properties / Prefab relationship
-
-## 🧩 Venue / Hotspot / Hotspot Properties / Prefab Relationship
+## 🏡 Venue / ❌ Hotspot / 🧩 Hotspot Properties / 🧊 Prefab relationship
 
 In the MetARverse, real-world locations flow through a clear semantic chain: **venues define the space**, **hotspots define the meaningful points within that space**, **hotspot properties define the live truth of those points**, and **Unity prefabs give those hotspots a visual and interactive form inside AR**. A venue such as a festival ground or golf course may contain dozens of hotspots, each mapped to a specific physical coordinate. Every hotspot carries one or more hotspot properties which describe its real-time state — such as taxis arriving, medics available, stock levels at a food van, or performers scheduled on a stage. These properties can update automatically through backend systems or AI agents belonging to the venue owner. In Unity, each hotspot is represented by a prefab that can show icons, labels, UI panels, animations, or 3D elements, allowing the information to surface visually in the user’s AR view. This creates a seamless pipeline where real-world data flows into hotspots, hotspot properties inform the AI and AR layers, and Unity prefabs physically display those changes — turning the real world into a responsive, data-rich interface.
 
 ```mermaid
+
 flowchart TD
 
 %% ========================
@@ -99,17 +99,16 @@ flowchart TD
 VENUE["<u><b>Venue</b></u><br/>🏌️ Geordie Genie Golf Course"]
 click VENUE "https://geoar.it/help#category-Venue-Properties" _blank
 
-%% ========================
-%% HOLE HOTSPOTS (1, 2, 3)
-%% ========================
 
+%% ========================
+%% HOTSPOTS (Hole 1, 2, 3)
+%% ========================
 HS1["<u><b>Hotspot</b></u><br/>⛳ Hole 1 – Shearer’s Creek"]
 click HS1 "https://geoar.it/help#category-Hotspot-Properties" _blank
 
 HS2["<u><b>Hotspot</b></u><br/>⛳ Hole 2 – Tyne Bridge"]
 click HS2 "https://geoar.it/help#category-Hotspot-Properties" _blank
 
-%% ---- UPDATED HOLE 3 ----
 HS3["<u><b>Hotspot</b></u><br/>⛳ Hole 3 – Pasty Suprise<br/><br/><b>Attention</b><br/>Out of Action<br/>Waterlogged"]
 click HS3 "https://geoar.it/help#category-Hotspot-Properties" _blank
 
@@ -117,28 +116,43 @@ VENUE --> HS1
 VENUE --> HS2
 VENUE --> HS3
 
+
+%% ========================
+%% SHARED PREFAB NODE
+%% ========================
+PREFAB["<u><b>Prefab</b></u><br/>🏗️ Golf Hole Prefab<br/>3D Model + Logic"]
+click PREFAB "https://geoar.it/help#category-Prefab" _blank
+
+%% All hotspots reference SAME prefab
+HS1 --> PREFAB
+HS2 --> PREFAB
+HS3 --> PREFAB
+
+
 %% ========================
 %% PROPERTIES FOR EACH HOLE
 %% ========================
 
 %% ----- HOLE 1 Properties -----
-HS1_P1["<u><b>Property</b></u><br/>🔣 Avg Score (Decimal Number)<br/><b>Value:</b> 4.16"]
-HS1_P2["<u><b>Property</b></u><br/>🔢 Eagles (Whole Number)<br/><b>Value:</b> 2"]
-HS1_P3["<u><b>Property</b></u><br/>🔢 Birdies (Whole Number)<br/><b>Value:</b> 23"]
-HS1_P4["<u><b>Property</b></u><br/>🔢 Pars (Whole Number)<br/><b>Value:</b> 278"]
+HS1_P1["<u><b>Property</b></u><br/>🔣 Avg Score<br/><b>Value:</b> 4.16"]
+HS1_P2["<u><b>Property</b></u><br/>🔢 Eagles<br/><b>Value:</b> 2"]
+HS1_P3["<u><b>Property</b></u><br/>🔢 Birdies<br/><b>Value:</b> 23"]
+HS1_P4["<u><b>Property</b></u><br/>🔢 Pars<br/><b>Value:</b> 278"]
 
 HS1 --> HS1_P1 --> HS1_P2 --> HS1_P3 --> HS1_P4
 
+
 %% ----- HOLE 2 Properties -----
-HS2_P1["<u><b>Property</b></u><br/>🔤 Golpher teeing off (Text)<br/><b>Value:</b> Lion Woods"]
-HS2_P2["<u><b>Property</b></u><br/>🔢 Top 10 (Whole Number)<br/><b>Value:</b> 3"]
-HS2_P3["<u><b>Property</b></u><br/>🔢 Points (Whole Number)<br/><b>Value:</b> 950"]
-HS2_P4["<u><b>Property</b></u><br/>🔣 Average score (Decimal Number)<br/><b>Value:</b> 66.989"]
-HS2_P5["<u><b>Property</b></u><br/>🔣 Driving accuracy (Decimal Number)<br/><b>Value:</b> 87.5%"]
+HS2_P1["<u><b>Property</b></u><br/>🔤 Golfer teeing off<br/><b>Value:</b> Lion Woods"]
+HS2_P2["<u><b>Property</b></u><br/>🔢 Top 10<br/><b>Value:</b> 3"]
+HS2_P3["<u><b>Property</b></u><br/>🔢 Points<br/><b>Value:</b> 950"]
+HS2_P4["<u><b>Property</b></u><br/>🔣 Average score<br/><b>Value:</b> 66.989"]
+HS2_P5["<u><b>Property</b></u><br/>🔣 Driving accuracy<br/><b>Value:</b> 87.5%"]
 
 HS2 --> HS2_P1 --> HS2_P2 --> HS2_P3 --> HS2_P4 --> HS2_P5
 
-%% Hole 3 has no individual property boxes – text is embedded inside HS3.
+
+%% Hole 3 properties are embedded in hotspot box (status = out of action)
 
 ```
 
@@ -147,7 +161,7 @@ HS2 --> HS2_P1 --> HS2_P2 --> HS2_P3 --> HS2_P4 --> HS2_P5
 
 Hotspots in the MetARverse are not limited to a single piece of information. Each hotspot may contain multiple *hotspot property entries*, each describing a real-world object, person, service, or live condition associated with that location. For example, a taxi rank may show several taxis with different capacities and arrival times; a bus stand may expose multiple buses with destinations and fares; a medical tent may list each medic and their availability; and a festival stage may show the full performance lineup. These properties can all be updated automatically by backend systems or AI agents belonging to the hotspot owner, ensuring the information seen in AR is always live, accurate, and context-aware. Instead of users guessing, wandering, or searching for staff, hotspots provide a clear, dynamic window into the real world — turning each location into a living data surface that helps people make decisions instantly.
 
-## Hotspot Properties examples
+## 🧩 Hotspot Properties examples
 
 | Hotspot        | Property 1                                      | Property 2                                         | Property 3                                        |
 |----------------|--------------------------------------------------|----------------------------------------------------|---------------------------------------------------|
