@@ -176,8 +176,26 @@ Hotspots in the MetARverse are not limited to a single piece of information. Eac
 | **Queue Point**| Bar A – Queue: 12 people                        | Bar B – Queue: 4 people                           | Tokens Desk – No queue                            |
 | **Safety Zone**| Alert: High Winds                               | Crowd Density: Heavy                              | Medical Status: Safe                              |
 
+## hotspot Property Types
+
+| PropertyDataType | Description (friendly) | Purpose / When Used |
+|------------------|------------------------|----------------------|
+| **Text** | Free text | Names, statuses, messages, labels, destinations. |
+| **Number** | Whole number (int) | Stock counts, queue length, scores, rankings. |
+| **HexNumber** | Hexadecimal value | Device IDs, beacon IDs, firmware codes. |
+| **DecimalNumber** | Floating/decimal number | Prices, measurements, scores with decimals. |
+| **Date** | Calendar date | Event days, schedule dates, service dates. |
+| **Time** | Time of day | Bus departures, ETA, stage performance times. |
+| **DateTime** | Combined date + time | Full timestamp for live updates or scheduling. |
+| **PhoneNumber** | Telephone number | Security hotline, steward phone, vendor contact. |
+| **EmailAddress** | Email address | Staff contact, vendor contact. |
+| **Url** | Standard URL | External pages, menus, livestreams, ticket links. |
+| **ImageUrl** | URL pointing to an image | Posters, menu photos, performer images. |
+| **PostalCode** | UK postal code | Geocoded hotspot reference, logistics. |
+
 
 ### 🧩 Hotspot Properties Diagram
+
 
 ```mermaid
 flowchart LR
