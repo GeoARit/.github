@@ -96,7 +96,6 @@ Below is a simple high-level relationship diagram showing the four key pillars o
 | **Prefab** | A 3D/AR asset linked to a hotspot. Defines the visual representation, interaction logic, animations, and semantic labels used inside Unity and AR. Multiple hotspots may reuse the same prefab model. |
 
 ---
-release in 2026.
 
 ## 🏡 Venue / ❌ Hotspot / 🧩 Hotspot Properties / 🧊 Prefab relationship
 
@@ -122,17 +121,13 @@ VENUE --> HS1
 VENUE --> HS2
 VENUE --> HS3
 
-%% ========================
 %% PREFAB
-%% ========================
 PREFAB["<u><b>🧊 - Prefab</b></u><br/>Golf Hole Prefab<br/>3D Model"]
 HS1 --> PREFAB
 HS2 --> PREFAB
 HS3 --> PREFAB
 
-%% ========================
 %% PROPERTIES FOR HOLE 1
-%% ========================
 HS1_P1["🧩 <b>Avg Score</b><br/>4.16"]
 HS1_P2["🧩 <b>Eagles</b><br/>2"]
 HS1_P3["🧩 <b>Birdies</b><br/>23"]
@@ -140,9 +135,7 @@ HS1_P4["🧩 <b>Pars</b><br/>278"]
 
 HS1 --> HS1_P1 --> HS1_P2 --> HS1_P3 --> HS1_P4
 
-%% ========================
 %% PROPERTIES FOR HOLE 2
-%% ========================
 HS2_P1["🧩 <b>Golfer teeing off</b><br/>Lion Woods"]
 HS2_P2["🧩 <b>Top 10</b><br/>3"]
 HS2_P3["🧩 <b>Points</b><br/>950"]
@@ -152,17 +145,15 @@ HS2_P5["🧩 <b>Driving accuracy</b><br/>87.5%"]
 HS2 --> HS2_P1 --> HS2_P2 --> HS2_P3 --> HS2_P4 --> HS2_P5
 
 %% ========================
-%% PROPERTY TYPES USED
+%% PROPERTY TYPES USED (BOLD TITLE)
 %% ========================
-subgraph PROP_TYPES ["🧩 Property Types Used"]
+subgraph PROP_TYPES ["<b>🧩 Property Types Used</b>"]
     TYPE_TEXT["🔤 Text"]
     TYPE_NUM["🔢 Number"]
     TYPE_DEC["🔣 Decimal Number"]
 end
 
-%% ========================
 %% MAPPINGS
-%% ========================
 HS1_P1 --> TYPE_DEC
 HS1_P2 --> TYPE_NUM
 HS1_P3 --> TYPE_NUM
