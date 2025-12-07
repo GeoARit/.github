@@ -196,7 +196,7 @@ Hotspots in the MetARverse are not limited to a single piece of information. Eac
 
 
 
-### 🧩 Hotspot Properties Diagram
+### 🧩 Hotspot Property Data Type Diagram
 
 ```mermaid
 flowchart LR
@@ -206,8 +206,8 @@ flowchart LR
     %% TEXTUAL TYPES
     TEXT["🔤 <b>Text</b><br/><i>Free-form words & labels</i>"]
     NUMBER["🔢 <b>Whole Number</b><br/><i>Integer values</i>"]
-    HEXNUM["✳️ <b>Hex Number</b><br/><i>Hexadecimal</i>"]
-    DECIMAL["🔣 <b>Decimal Number</b><br/><i>Float / precise value</i>"]
+    HEXNUM["✳️ <b>Hex Number</b><br/><i>Hexadecimal values</i>"]
+    DECIMAL["🔣 <b>Decimal Number</b><br/><i>Float / measurable values</i>"]
 
     %% TIME TYPES
     DATE["📅 <b>Date</b><br/><i>Calendar date</i>"]
@@ -217,7 +217,7 @@ flowchart LR
     %% CONTACT TYPES
     PHONE["📞 <b>Phone Number</b>"]
     EMAIL["📧 <b>Email</b>"]
-    URL["🔗 <b>URL</b>"]
+    URLNODE["🔗 <b>URL</b>"]
     IMAGEURL["🖼️ <b>Image URL</b>"]
 
     %% LOCATION
@@ -234,11 +234,10 @@ flowchart LR
 
     TITLE --> PHONE
     TITLE --> EMAIL
-    TITLE --> URL
+    TITLE --> URLNODE
     TITLE --> IMAGEURL
 
     TITLE --> POSTCODE
-
 ---
 
 ## 🧩 Website Menu 
