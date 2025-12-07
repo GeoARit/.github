@@ -177,7 +177,7 @@ Hotspots in the MetARverse are not limited to a single piece of information. Eac
 | **Safety Zone**| Alert: High Winds                               | Crowd Density: Heavy                              | Medical Status: Safe                              |
 
 
-### Hotspot Properties Diagram
+### 🧩 Diagram
 
 ```mermaid
 flowchart LR
