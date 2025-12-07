@@ -11,24 +11,36 @@ Together they create a spatial intelligence that turns physical life into someth
 ```mermaid
 flowchart TD
 
-    GEONEURO["<u>🧠 GeoNeuroSpatial Engine</u>"]
+    %% ===============================
+    %% TITLE NODES (TOP LEVEL)
+    %% ===============================
+    GENIE["<u><b>🤖 Geordie Genie® – Companion Layer</b></u>"]
+    REALITY["<u><b>🌍 GeoAR.it® – Reality Layer</b></u>"]
+    LIFE["<u><b>🌈 MetARverse® – Life Layer</b></u>"]
 
-    GENIE["<u>🤖 Geordie Genie® – Companion Layer</u><br/>A digital twin of <i>you</i> – humour, emotions, memories, values, patterns, intentions."]
-    REALITY["<u>🌍 GeoAR.it® – Reality Layer</u><br/>A digital twin of the UK – factual, geospatial, infrastructural, live, layered, localised, and open."]
-    LIFE["<u>🌈 MetARverse® – Life Layer</u><br/>A semantic, spatial life layer where moods, moments, and memories become part of the world around you."]
+    %% ===============================
+    %% DESCRIPTIONS (SECOND LEVEL)
+    %% ===============================
+    GENIE_DESC["A digital twin of <i>you</i> – humour, emotions, memories, values, patterns, intentions."]
+    REALITY_DESC["A digital twin of the UK – factual, geospatial, infrastructural, live, layered, localised, and open."]
+    LIFE_DESC["A semantic life layer where moods, moments, and memories become part of the world around you."]
 
-    GEONEURO --> GENIE
-    GEONEURO --> REALITY
-    GEONEURO --> LIFE
+    %% Attach descriptions to titles
+    GENIE --> GENIE_DESC
+    REALITY --> REALITY_DESC
+    LIFE --> LIFE_DESC
+
+    %% ===============================
+    %% CORE ENGINE (POWERING ALL THREE)
+    %% ===============================
+    ENGINE["<b>🧠 GeoNeuroSpatial Engine</b><br/>The AI reasoning substrate powering all layers."]
+
+    %% Engine connects upward to each title
+    ENGINE --> GENIE
+    ENGINE --> REALITY
+    ENGINE --> LIFE
+
 ```
-
-### 🧠 The Three GeoNeuroSpatial Engine Layers 
-
-| Layer | Category | Description |
-|--------|----------|-------------|
-| 🤖 **Geordie Genie®** | Companion | A Digital Twin of **you** — your humour, emotions, context, memories, values, patterns, and intentions. This layer provides warm, local, emotionally intelligent guidance and acts as the human-facing interface. |
-| 🌍 **GeoAR.it®** | Reality | A Digital Twin of the **UK** — factual, geospatial, infrastructural, live, layered, localised, and open. This layer is the real-world substrate the AI stands on. |
-| 🌈 **MetARverse®** | Life | A semantic, spatial life layer where moods, moments and memories become part of the world around you, turning lived experience into structured meaning the AI can reason over. |
 
 ---
 
@@ -99,61 +111,68 @@ flowchart TD
 VENUE["<u><b>🏡 - Venue</b></u><br/>Geordie Genie Golf Course"]
 click VENUE "https://geoar.it/help#category-Venue-Properties" _blank
 
-
 %% ========================
-%% HOTSPOTS (Hole 1, 2, 3)
+%% HOTSPOTS
 %% ========================
 HS1["<u><b>❌ - Hotspot</b></u><br/>⛳ Hole 1 – Shearer’s Creek"]
-click HS1 "https://geoar.it/help#category-Hotspot-Properties" _blank
-
 HS2["<u><b>❌ - Hotspot</b></u><br/>⛳ Hole 2 – Tyne Bridge"]
-click HS2 "https://geoar.it/help#category-Hotspot-Properties" _blank
-
 HS3["<u><b>❌ - Hotspot</b></u><br/>⛳ Hole 3 – Pasty Suprise<br/><br/><b>Attention</b><br/>Out of Action<br/>Waterlogged"]
-click HS3 "https://geoar.it/help#category-Hotspot-Properties" _blank
-
 
 VENUE --> HS1
 VENUE --> HS2
 VENUE --> HS3
 
-
 %% ========================
-%% SHARED PREFAB NODE
+%% PREFAB
 %% ========================
 PREFAB["<u><b>🧊 - Prefab</b></u><br/>Golf Hole Prefab<br/>3D Model"]
-click PREFAB "https://geoar.it/help#category-Prefab" _blank
-
 HS1 --> PREFAB
 HS2 --> PREFAB
 HS3 --> PREFAB
 
-
 %% ========================
 %% PROPERTIES FOR HOLE 1
 %% ========================
-HS1_P1["<u><b>🧩 - Property</b></u><br/>Avg Score<br/><b>Value:</b> 4.16"]
-HS1_P2["<u><b>🧩 - Property</b></u><br/>Eagles<br/><b>Value:</b> 2"]
-HS1_P3["<u><b>🧩 - Property</b></u><br/>Birdies<br/><b>Value:</b> 23"]
-HS1_P4["<u><b>🧩 - Property</b></u><br/>Pars<br/><b>Value:</b> 278"]
+HS1_P1["🧩 <b>Avg Score</b><br/>4.16"]
+HS1_P2["🧩 <b>Eagles</b><br/>2"]
+HS1_P3["🧩 <b>Birdies</b><br/>23"]
+HS1_P4["🧩 <b>Pars</b><br/>278"]
 
 HS1 --> HS1_P1 --> HS1_P2 --> HS1_P3 --> HS1_P4
-
 
 %% ========================
 %% PROPERTIES FOR HOLE 2
 %% ========================
-HS2_P1["<u><b>🧩 - Property</b></u><br/>Golfer teeing off<br/><b>Value:</b> Lion Woods"]
-HS2_P2["<u><b>🧩 - Property</b></u><br/>Top 10<br/><b>Value:</b> 3"]
-HS2_P3["<u><b>🧩 - Property</b></u><br/>Points<br/><b>Value:</b> 950"]
-HS2_P4["<u><b>🧩 - Property</b></u><br/>Average score<br/><b>Value:</b> 66.989"]
-HS2_P5["<u><b>🧩 - Property</b></u><br/>Driving accuracy<br/><b>Value:</b> 87.5%"]
+HS2_P1["🧩 <b>Golfer teeing off</b><br/>Lion Woods"]
+HS2_P2["🧩 <b>Top 10</b><br/>3"]
+HS2_P3["🧩 <b>Points</b><br/>950"]
+HS2_P4["🧩 <b>Average score</b><br/>66.989"]
+HS2_P5["🧩 <b>Driving accuracy</b><br/>87.5%"]
 
 HS2 --> HS2_P1 --> HS2_P2 --> HS2_P3 --> HS2_P4 --> HS2_P5
 
+%% ========================
+%% PROPERTY TYPES USED
+%% ========================
+subgraph PROP_TYPES ["🧩 Property Types Used"]
+    TYPE_TEXT["🔤 Text"]
+    TYPE_NUM["🔢 Number"]
+    TYPE_DEC["🔣 Decimal Number"]
+end
 
-%% Hole 3 properties remain embedded in hotspot box
+%% ========================
+%% MAPPINGS
+%% ========================
+HS1_P1 --> TYPE_DEC
+HS1_P2 --> TYPE_NUM
+HS1_P3 --> TYPE_NUM
+HS1_P4 --> TYPE_NUM
 
+HS2_P1 --> TYPE_TEXT
+HS2_P2 --> TYPE_NUM
+HS2_P3 --> TYPE_NUM
+HS2_P4 --> TYPE_DEC
+HS2_P5 --> TYPE_DEC
 ```
 
 ---
@@ -236,6 +255,7 @@ flowchart LR
 
     TITLE --> POSTCODE
 ```
+
 ---
 
 ## 🧩 Website Menu 
