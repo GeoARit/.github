@@ -74,10 +74,14 @@ He can remember things for you, keep you safe, point you towards meaningful plac
 
 Below is a simple high-level relationship diagram showing the four key pillars of the GeoAR.it spatial layer:
 
-- **Venue** — A real-world location (pub, park, shop, station).  
-- **Hotspot** — A point or object placed within or near a venue.  
-- **Hotspot Properties** — Metadata that describes a hotspot’s behaviour, type, or attributes.  
-- **Prefab** — A 3D/AR asset associated with a hotspot  
+### 🧩 MetARverse Core Entities
+
+| Entity | Description |
+|--------|-------------|
+| **Venue** | A real-world location such as a pub, park, shop, train station, university campus, festival ground, golf course, or any identifiable place. It provides the spatial container that hotspots live inside. |
+| **Hotspot** | A point, zone, or interactive object placed within or near a venue. Represents something meaningful such as a stage, taxi rank, medical tent, golf hole, power outlet, queue point, camping area, shop entrance, or bus stand. |
+| **Hotspot Properties** | Metadata describing the hotspot’s live behaviour, attributes, or semantics — such as taxi availability, stage lineup, medic status, bus departure times, safety level, stock levels, prices, queue lengths, or environmental warnings. |
+| **Prefab** | A 3D/AR asset linked to a hotspot. Defines the visual representation, interaction logic, animations, and semantic labels used inside Unity and AR. Multiple hotspots may reuse the same prefab model. |
 
 ---
 release in 2026.
