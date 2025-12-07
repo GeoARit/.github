@@ -91,7 +91,6 @@ release in 2026.
 In the MetARverse, real-world locations flow through a clear semantic chain: **venues define the space**, **hotspots define the meaningful points within that space**, **hotspot properties define the live truth of those points**, and **Unity prefabs give those hotspots a visual and interactive form inside AR**. A venue such as a festival ground or golf course may contain dozens of hotspots, each mapped to a specific physical coordinate. Every hotspot carries one or more hotspot properties which describe its real-time state — such as taxis arriving, medics available, stock levels at a food van, or performers scheduled on a stage. These properties can update automatically through backend systems or AI agents belonging to the venue owner. In Unity, each hotspot is represented by a prefab that can show icons, labels, UI panels, animations, or 3D elements, allowing the information to surface visually in the user’s AR view. This creates a seamless pipeline where real-world data flows into hotspots, hotspot properties inform the AI and AR layers, and Unity prefabs physically display those changes — turning the real world into a responsive, data-rich interface.
 
 ```mermaid
-
 flowchart TD
 
 %% ========================
@@ -196,7 +195,6 @@ Hotspots in the MetARverse are not limited to a single piece of information. Eac
 
 ### 🧩 Hotspot Property Data Type Diagram
 
-```mermaid
 ```mermaid
 flowchart LR
 
