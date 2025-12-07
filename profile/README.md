@@ -194,10 +194,9 @@ Hotspots in the MetARverse are not limited to a single piece of information. Eac
 | 🖼️ **ImageUrl** | Link to image | Posters, lineup cards, photos. |
 | 🏣 **PostalCode** | UK postcode | Geocoded hotspot anchor reference. |
 
-
-
 ### 🧩 Hotspot Property Data Type Diagram
 
+```mermaid
 ```mermaid
 flowchart LR
 
@@ -238,6 +237,7 @@ flowchart LR
     TITLE --> IMAGEURL
 
     TITLE --> POSTCODE
+
 ---
 
 ## 🧩 Website Menu 
