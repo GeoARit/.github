@@ -96,21 +96,22 @@ flowchart TD
 %% ========================
 %% VENUE
 %% ========================
-VENUE["<u><b>Venue</b></u><br/>🏌️ Geordie Genie Golf Course"]
+VENUE["<u><b>🏡 - Venue</b></u><br/>Geordie Genie Golf Course"]
 click VENUE "https://geoar.it/help#category-Venue-Properties" _blank
 
 
 %% ========================
 %% HOTSPOTS (Hole 1, 2, 3)
 %% ========================
-HS1["<u><b>Hotspot</b></u><br/>⛳ Hole 1 – Shearer’s Creek"]
+HS1["<u><b>❌ - Hotspot</b></u><br/>⛳ Hole 1 – Shearer’s Creek"]
 click HS1 "https://geoar.it/help#category-Hotspot-Properties" _blank
 
-HS2["<u><b>Hotspot</b></u><br/>⛳ Hole 2 – Tyne Bridge"]
+HS2["<u><b>❌ - Hotspot</b></u><br/>⛳ Hole 2 – Tyne Bridge"]
 click HS2 "https://geoar.it/help#category-Hotspot-Properties" _blank
 
-HS3["<u><b>Hotspot</b></u><br/>⛳ Hole 3 – Pasty Suprise<br/><br/><b>Attention</b><br/>Out of Action<br/>Waterlogged"]
+HS3["<u><b>❌ - Hotspot</b></u><br/>⛳ Hole 3 – Pasty Suprise<br/><br/><b>Attention</b><br/>Out of Action<br/>Waterlogged"]
 click HS3 "https://geoar.it/help#category-Hotspot-Properties" _blank
+
 
 VENUE --> HS1
 VENUE --> HS2
@@ -120,39 +121,38 @@ VENUE --> HS3
 %% ========================
 %% SHARED PREFAB NODE
 %% ========================
-PREFAB["<u><b>Prefab</b></u><br/>🏗️ Golf Hole Prefab<br/>3D Model + Logic"]
+PREFAB["<u><b>🧊 - Prefab</b></u><br/>Golf Hole Prefab<br/>3D Model + Logic"]
 click PREFAB "https://geoar.it/help#category-Prefab" _blank
 
-%% All hotspots reference SAME prefab
 HS1 --> PREFAB
 HS2 --> PREFAB
 HS3 --> PREFAB
 
 
 %% ========================
-%% PROPERTIES FOR EACH HOLE
+%% PROPERTIES FOR HOLE 1
 %% ========================
-
-%% ----- HOLE 1 Properties -----
-HS1_P1["<u><b>Property</b></u><br/>🔣 Avg Score<br/><b>Value:</b> 4.16"]
-HS1_P2["<u><b>Property</b></u><br/>🔢 Eagles<br/><b>Value:</b> 2"]
-HS1_P3["<u><b>Property</b></u><br/>🔢 Birdies<br/><b>Value:</b> 23"]
-HS1_P4["<u><b>Property</b></u><br/>🔢 Pars<br/><b>Value:</b> 278"]
+HS1_P1["<u><b>🧩 - Property</b></u><br/>Avg Score<br/><b>Value:</b> 4.16"]
+HS1_P2["<u><b>🧩 - Property</b></u><br/>Eagles<br/><b>Value:</b> 2"]
+HS1_P3["<u><b>🧩 - Property</b></u><br/>Birdies<br/><b>Value:</b> 23"]
+HS1_P4["<u><b>🧩 - Property</b></u><br/>Pars<br/><b>Value:</b> 278"]
 
 HS1 --> HS1_P1 --> HS1_P2 --> HS1_P3 --> HS1_P4
 
 
-%% ----- HOLE 2 Properties -----
-HS2_P1["<u><b>Property</b></u><br/>🔤 Golfer teeing off<br/><b>Value:</b> Lion Woods"]
-HS2_P2["<u><b>Property</b></u><br/>🔢 Top 10<br/><b>Value:</b> 3"]
-HS2_P3["<u><b>Property</b></u><br/>🔢 Points<br/><b>Value:</b> 950"]
-HS2_P4["<u><b>Property</b></u><br/>🔣 Average score<br/><b>Value:</b> 66.989"]
-HS2_P5["<u><b>Property</b></u><br/>🔣 Driving accuracy<br/><b>Value:</b> 87.5%"]
+%% ========================
+%% PROPERTIES FOR HOLE 2
+%% ========================
+HS2_P1["<u><b>🧩 - Property</b></u><br/>Golfer teeing off<br/><b>Value:</b> Lion Woods"]
+HS2_P2["<u><b>🧩 - Property</b></u><br/>Top 10<br/><b>Value:</b> 3"]
+HS2_P3["<u><b>🧩 - Property</b></u><br/>Points<br/><b>Value:</b> 950"]
+HS2_P4["<u><b>🧩 - Property</b></u><br/>Average score<br/><b>Value:</b> 66.989"]
+HS2_P5["<u><b>🧩 - Property</b></u><br/>Driving accuracy<br/><b>Value:</b> 87.5%"]
 
 HS2 --> HS2_P1 --> HS2_P2 --> HS2_P3 --> HS2_P4 --> HS2_P5
 
 
-%% Hole 3 properties are embedded in hotspot box (status = out of action)
+%% Hole 3 properties remain embedded in hotspot box
 
 ```
 
@@ -163,8 +163,8 @@ Hotspots in the MetARverse are not limited to a single piece of information. Eac
 
 ## 🧩 Hotspot Properties examples
 
-| Hotspot        | Property 1                                      | Property 2                                         | Property 3                                        |
-|----------------|--------------------------------------------------|----------------------------------------------------|---------------------------------------------------|
+| ❌ - Hotspot  | 🧩 -Property 1                                  | 🧩 -Property 2                                     | 🧩 -Property 3                                        |
+|----------------|-------------------------------------------------|----------------------------------------------------|---------------------------------------------------|
 | **Taxi Rank**  | Taxi #1 – 6 seater – Available                  | Taxi #2 – 4 seater – Arriving in 5 mins           | Taxi #3 – 8 seater – Busy (ETA 12 mins)           |
 | **Bus Stand**  | Bus A – To Newcastle @ 13:45 (£15 single fare)  | Bus B – To Durham @ 14:10                         | Bus C – Delayed – Next due 14:55                  |
 | **Medical Tent** | Medic 1 – Triage – Available                  | Medic 2 – Treating Patient (Free in 15 mins)      | Medic 3 – Resting (Back at 14:10)                 |
