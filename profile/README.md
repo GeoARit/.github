@@ -46,7 +46,7 @@ flowchart TD
 
 ## 💠 What GeoAR.it® Is
 
-GeoAR.it is the foundation layer of the **MetARverse** — a world where:
+GeoAR.it® is the foundation layer of the **MetARverse®** — a world where:
 
 - places have meaning,  
 - memories attach to locations,  
