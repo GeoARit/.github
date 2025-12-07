@@ -80,7 +80,7 @@ Below is a simple high-level relationship diagram showing the four key pillars o
 - **Venue** — A real-world location (pub, park, shop, station).  
 - **Hotspot** — A point or object placed within or near a venue.  
 - **Hotspot Properties** — Metadata that describes a hotspot’s behaviour, type, or attributes.  
-- **Prefab** — A 3D/AR asset associated with a hotspot (e.g., line navigation arrow, portal, sign, object).
+- **Prefab** — A 3D/AR asset associated with a hotspot  
 
 ---
 
