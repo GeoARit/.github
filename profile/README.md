@@ -164,70 +164,64 @@ Hotspots in the MetARverse are not limited to a single piece of information. Eac
 
 ## 🧩 Hotspot Properties examples
 
-| ❌ - Hotspot  | 🧩 -Property 1                                  | 🧩 - Property 2                                     | 🧩 - Property 3                                        |
-|----------------|-------------------------------------------------|----------------------------------------------------|---------------------------------------------------|
-| **Taxi Rank**  | Taxi #1 – 6 seater – Available                  | Taxi #2 – 4 seater – Arriving in 5 mins           | Taxi #3 – 8 seater – Busy (ETA 12 mins)           |
-| **Bus Stand**  | Bus A – To Newcastle @ 13:45 (£15 single fare)  | Bus B – To Durham @ 14:10                         | Bus C – Delayed – Next due 14:55                  |
-| **Medical Tent** | Medic 1 – Triage – Available                  | Medic 2 – Treating Patient (Free in 15 mins)      | Medic 3 – Resting (Back at 14:10)                 |
-| **Festival Stage** | Performer 1 – DJ Nova (20:00)               | Performer 2 – Skyline (21:30)                     | Performer 3 – Neon Pulse (23:00)                  |
-| **Food Van**   | Hotdog – £4 – 14 left                           | Fries – £3 – Low Stock                            | Drinks – £2.50 – Full Stock                       |
-| **Camping Area** | Zone A – 5 plots free                         | Zone B – Fully Booked                             | Zone C – 12 plots free                            |
-| **Merch Tent** | Tent A – Open 10am–6pm                          | Tent B – Opens 12pm–8pm                           | Tent C – Closed Today                             |
-| **Queue Point**| Bar A – Queue: 12 people                        | Bar B – Queue: 4 people                           | Tokens Desk – No queue                            |
-| **Safety Zone**| Alert: High Winds                               | Crowd Density: Heavy                              | Medical Status: Safe                              |
+| ❌ Hotspot        | 🧩 Property 1                                      | 🧩 Property 2                                         | 🧩 Property 3                                        |
+|-------------------|----------------------------------------------------|------------------------------------------------------|-----------------------------------------------------|
+| **Taxi Rank**     | 🚕 Taxi #1 – 6 seater – Available                  | 🚕 Taxi #2 – 4 seater – Arriving in 5 mins           | 🚕 Taxi #3 – 8 seater – Busy (ETA 12 mins)          |
+| **Bus Stand**     | 🚌 Bus A – Newcastle @ 13:45 (£15 single)          | 🚌 Bus B – Durham @ 14:10                             | 🚌 Bus C – Delayed – Next due 14:55                 |
+| **Medical Tent**  | 🧑‍⚕️ Medic 1 – Triage – Available                  | 🧑‍⚕️ Medic 2 – Treating (Free in 15 mins)            | 🧑‍⚕️ Medic 3 – Resting (Back at 14:10)             |
+| **Festival Stage**| 🎵 Performer 1 – DJ Nova (20:00)                   | 🎵 Performer 2 – Skyline (21:30)                     | 🎵 Performer 3 – Neon Pulse (23:00)                 |
+| **Food Van**      | 🌭 Hotdog – £4 – 14 left                           | 🍟 Fries – £3 – Low Stock                            | 🥤 Drinks – £2.50 – Full Stock                      |
+| **Camping Area**  | 🏕️ Zone A – 5 plots free                           | 🏕️ Zone B – Fully Booked                             | 🏕️ Zone C – 12 plots free                           |
+| **Merch Tent**    | 🛍️ Tent A – Open 10am–6pm                          | 🛍️ Tent B – Opens 12pm–8pm                           | 🛍️ Tent C – Closed Today                            |
+| **Queue Point**   | 🍺 Bar A – Queue: 12 people                        | 🍺 Bar B – Queue: 4 people                           | 🎟️ Tokens Desk – No queue                           |
+| **Safety Zone**   | ⚠️ Alert: High Winds                               | 👥 Crowd Density: Heavy                              | 🩺 Medical Status: Safe                             |
 
-## hotspot Property Types
 
-| PropertyDataType | Description (friendly) | Purpose / When Used |
-|------------------|------------------------|----------------------|
-| **Text** | Free text | Names, statuses, messages, labels, destinations. |
-| **Number** | Whole number (int) | Stock counts, queue length, scores, rankings. |
-| **HexNumber** | Hexadecimal value | Device IDs, beacon IDs, firmware codes. |
-| **DecimalNumber** | Floating/decimal number | Prices, measurements, scores with decimals. |
-| **Date** | Calendar date | Event days, schedule dates, service dates. |
-| **Time** | Time of day | Bus departures, ETA, stage performance times. |
-| **DateTime** | Combined date + time | Full timestamp for live updates or scheduling. |
-| **PhoneNumber** | Telephone number | Security hotline, steward phone, vendor contact. |
-| **EmailAddress** | Email address | Staff contact, vendor contact. |
-| **Url** | Standard URL | External pages, menus, livestreams, ticket links. |
-| **ImageUrl** | URL pointing to an image | Posters, menu photos, performer images. |
-| **PostalCode** | UK postal code | Geocoded hotspot reference, logistics. |
+##  🧩 Hotspot Property Types
+
+| 🧩 PropertyDataType | Description | Purpose / When Used |
+|---------------------|-------------|----------------------|
+| 🔤 **Text** | Free text | Names, statuses, destinations, messages. |
+| 🔢 **Number** | Whole number | Queue length, stock level, tallies. |
+| ✳️ **HexNumber** | Hexadecimal value | Device IDs, beacon codes, sensor identifiers. |
+| 🔣 **DecimalNumber** | Floating/decimal | Prices, scores, percentages, distances. |
+| 📅 **Date** | Calendar date | Single-day events, schedules, opening days. |
+| ⏰ **Time** | Time of day | Bus departures, ETA, performance start times. |
+| 🕰️ **DateTime** | Combined timestamp | Real-time updates, transport timetables. |
+| 📞 **PhoneNumber** | Contact telephone | Security, vendor, emergency contact. |
+| 📧 **EmailAddress** | Email string | Vendor contact, staff email, bookings. |
+| 🔗 **Url** | External link | Menus, livestreams, ticketing, maps. |
+| 🖼️ **ImageUrl** | Link to image | Posters, lineup cards, photos. |
+| 🏣 **PostalCode** | UK postcode | Geocoded hotspot anchor reference. |
+
 
 
 ### 🧩 Hotspot Properties Diagram
 
-
 ```mermaid
 flowchart LR
 
-    %% ========================
-    %% TITLE NODE
-    %% ========================
-    TITLE["<u><b>Property Data Types</b></u><br/>🧩 How hotspot properties store information"]
+    TITLE["<u><b>🧩 Property Data Types</b></u><br/>How hotspot properties store information"]
 
-    %% ========================
-    %% INDIVIDUAL PROPERTY TYPES
-    %% ========================
-
-    TEXT["🔤 <b>Text</b><br/><i>Free-form words & sentences</i>"]
+    %% TEXTUAL TYPES
+    TEXT["🔤 <b>Text</b><br/><i>Free-form words & labels</i>"]
     NUMBER["🔢 <b>Whole Number</b><br/><i>Integer values</i>"]
-    HEXNUM["✳️ <b>Hex Number</b><br/><i>Hexadecimal numeric values</i>"]
-    DECIMAL["🔣 <b>Decimal Number</b><br/><i>Float / measurable values</i>"]
+    HEXNUM["✳️ <b>Hex Number</b><br/><i>Hexadecimal</i>"]
+    DECIMAL["🔣 <b>Decimal Number</b><br/><i>Float / precise value</i>"]
 
+    %% TIME TYPES
     DATE["📅 <b>Date</b><br/><i>Calendar date</i>"]
-    TIME["⏰ <b>Time</b><br/><i>Time-of-day</i>"]
-    DATETIME["🕰️ <b>Date & Time</b><br/><i>Combined timestamp</i>"]
+    TIME["⏰ <b>Time</b><br/><i>Time of day</i>"]
+    DATETIME["🕰️ <b>Date & Time</b><br/><i>Full timestamp</i>"]
 
-    PHONE["📞 <b>Phone Number</b><br/><i>Contact number</i>"]
-    EMAIL["📧 <b>Email Address</b><br/><i>Email string</i>"]
-    URL["🔗 <b>URL</b><br/><i>Website link</i>"]
-    IMAGEURL["🖼️ <b>Image URL</b><br/><i>Referenced image file</i>"]
+    %% CONTACT TYPES
+    PHONE["📞 <b>Phone Number</b>"]
+    EMAIL["📧 <b>Email</b>"]
+    URL["🔗 <b>URL</b>"]
+    IMAGEURL["🖼️ <b>Image URL</b>"]
 
-    POSTCODE["🏣 <b>Postal Code</b><br/><i>UK postcode format</i>"]
-
-    %% ========================
-    %% CONNECTIONS
-    %% ========================
+    %% LOCATION
+    POSTCODE["🏣 <b>Postal Code</b>"]
 
     TITLE --> TEXT
     TITLE --> NUMBER
@@ -244,7 +238,7 @@ flowchart LR
     TITLE --> IMAGEURL
 
     TITLE --> POSTCODE
-```
+
 ---
 
 ## 🧩 Website Menu 
