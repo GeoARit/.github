@@ -1,4 +1,4 @@
-# 🧠👓🌍 **GeoNeuroSpatial Engine**
+# 👓🌍🧠 **GeoNeuroSpatial Engine**
 
 GeoAR.it is built on a simple belief: technology should help people move through the world with clarity, confidence, and emotional grounding.  It blends **geospatial awareness**, **augmented reality**, and **AI companionship** into a calm, meaningful digital layer — something that enhances everyday life without intruding on it.
 
