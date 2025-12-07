@@ -58,7 +58,7 @@ Each one is an anchor point in the real world that the AI and AR layers can atta
 
 ---
 
-## 🧞 Geordie Genie® — Your Companion in the MetARverse
+## 🧞 Geordie Genie® — Your Companion in the MetARverse®
 
 Geordie Genie represents the human side of the platform:  
 a warm, local, emotionally intelligent character who helps guide the user through their surroundings with humour, empathy, and awareness.
