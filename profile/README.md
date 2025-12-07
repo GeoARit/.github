@@ -141,6 +141,25 @@ HS2 --> HS2_P1 --> HS2_P2 --> HS2_P3 --> HS2_P4 --> HS2_P5
 ---
 ## 🧩 Hotspot Properties
 
+Hotspots in the MetARverse are not limited to a single piece of information. Each hotspot may contain multiple *hotspot property entries*, each describing a real-world object, person, service, or live condition associated with that location. For example, a taxi rank may show several taxis with different capacities and arrival times; a bus stand may expose multiple buses with destinations and fares; a medical tent may list each medic and their availability; and a festival stage may show the full performance lineup. These properties can all be updated automatically by backend systems or AI agents belonging to the hotspot owner, ensuring the information seen in AR is always live, accurate, and context-aware. Instead of users guessing, wandering, or searching for staff, hotspots provide a clear, dynamic window into the real world — turning each location into a living data surface that helps people make decisions instantly.
+
+## Hotspot Properties examples
+
+| Hotspot        | Property 1                                      | Property 2                                         | Property 3                                        |
+|----------------|--------------------------------------------------|----------------------------------------------------|---------------------------------------------------|
+| **Taxi Rank**  | Taxi #1 – 6 seater – Available                  | Taxi #2 – 4 seater – Arriving in 5 mins           | Taxi #3 – 8 seater – Busy (ETA 12 mins)           |
+| **Bus Stand**  | Bus A – To Newcastle @ 13:45 (£15 single fare)  | Bus B – To Durham @ 14:10                         | Bus C – Delayed – Next due 14:55                  |
+| **Medical Tent** | Medic 1 – Triage – Available                  | Medic 2 – Treating Patient (Free in 15 mins)      | Medic 3 – Resting (Back at 14:10)                 |
+| **Festival Stage** | Performer 1 – DJ Nova (20:00)               | Performer 2 – Skyline (21:30)                     | Performer 3 – Neon Pulse (23:00)                  |
+| **Food Van**   | Hotdog – £4 – 14 left                           | Fries – £3 – Low Stock                            | Drinks – £2.50 – Full Stock                       |
+| **Camping Area** | Zone A – 5 plots free                         | Zone B – Fully Booked                             | Zone C – 12 plots free                            |
+| **Merch Tent** | Tent A – Open 10am–6pm                          | Tent B – Opens 12pm–8pm                           | Tent C – Closed Today                             |
+| **Queue Point**| Bar A – Queue: 12 people                        | Bar B – Queue: 4 people                           | Tokens Desk – No queue                            |
+| **Safety Zone**| Alert: High Winds                               | Crowd Density: Heavy                              | Medical Status: Safe                              |
+
+
+### Hotspot Properties Diagram
+
 ```mermaid
 flowchart LR
 
