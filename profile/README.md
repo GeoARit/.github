@@ -122,7 +122,7 @@ VENUE --> HS3
 %% ========================
 %% SHARED PREFAB NODE
 %% ========================
-PREFAB["<u><b>🧊 - Prefab</b></u><br/>Golf Hole Prefab<br/>3D Model + Logic"]
+PREFAB["<u><b>🧊 - Prefab</b></u><br/>Golf Hole Prefab<br/>3D Model"]
 click PREFAB "https://geoar.it/help#category-Prefab" _blank
 
 HS1 --> PREFAB
