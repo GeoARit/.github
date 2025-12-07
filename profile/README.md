@@ -164,7 +164,7 @@ Hotspots in the MetARverse are not limited to a single piece of information. Eac
 
 ## 🧩 Hotspot Properties examples
 
-| ❌ - Hotspot  | 🧩 -Property 1                                  | 🧩 -Property 2                                     | 🧩 -Property 3                                        |
+| ❌ - Hotspot  | 🧩 -Property 1                                  | 🧩 - Property 2                                     | 🧩 - Property 3                                        |
 |----------------|-------------------------------------------------|----------------------------------------------------|---------------------------------------------------|
 | **Taxi Rank**  | Taxi #1 – 6 seater – Available                  | Taxi #2 – 4 seater – Arriving in 5 mins           | Taxi #3 – 8 seater – Busy (ETA 12 mins)           |
 | **Bus Stand**  | Bus A – To Newcastle @ 13:45 (£15 single fare)  | Bus B – To Durham @ 14:10                         | Bus C – Delayed – Next due 14:55                  |
