@@ -14,7 +14,7 @@ flowchart TD
     %% ===============================
     %% TITLE NODES (TOP LEVEL)
     %% ===============================
-    GENIE["<u><b>🤖 Geordie Genie® – Companion Layer</b></u>"]
+    GENIE["<u><b>🤖 Geordie Genie® – AI Companion Layer</b></u>"]
     REALITY["<u><b>🌍 GeoAR.it® – Reality Layer</b></u>"]
     LIFE["<u><b>🌈 MetARverse® – Life Layer</b></u>"]
 
