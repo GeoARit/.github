@@ -21,7 +21,7 @@ flowchart TD
     %% ===============================
     %% DESCRIPTIONS (SECOND LEVEL)
     %% ===============================
-    GENIE_DESC["A digital twin of <i>you</i> – humour, emotions, memories, values, patterns, intentions."]
+    GENIE_DESC["A digital twin of <i>you</i> – humour, emotions, memories, values, patterns, intentions, Bio."]
     REALITY_DESC["A digital twin of the UK – factual, geospatial, infrastructural, live, layered, localised, and open."]
     LIFE_DESC["A semantic life layer where moods, moments, and memories become part of the world around you."]
 
