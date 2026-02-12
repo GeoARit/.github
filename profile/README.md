@@ -1,372 +1,265 @@
-# 👓🌍🧠 **GeoNeuroSpatial Intelligence Engine**
+ 
+# 👓🌍🧠 **GeoNeuroSpatial Intelligence Engine (v3)**
 
 (Public issues repository: https://github.com/GeoARit/Public)
 
-GeoAR.it is built on a simple belief: technology should help people move through the world with clarity, confidence, and emotional grounding.  It blends **geospatial awareness**, **augmented reality**, and **AI companionship** into a calm, meaningful digital layer — something that enhances everyday life without intruding on it.
+GeoAR.it is built on a simple belief: technology should help people move through the world with clarity, confidence, and emotional grounding.
 
-At its core, the system is about **humans**: what they feel, where they stand, and how intelligence can support them quietly, intuitively, and with empathy.
+It blends:
+- **geospatial awareness**,
+- **augmented reality**,
+- and **AI companionship**
 
-All of this converges into the **GeoNeuroSpatial Engine** — the fusion of the human layer, the world layer, and the semantic meaning layer.  
-Together they create a spatial intelligence that turns physical life into something understandable, navigable, predictive, and emotionally aware —  **running on-edge to protect the user’s privacy and keep their world truly their own.**
+into a calm, meaningful digital layer that enhances everyday life without getting in the way.
+
+At its core, the system is about **humans**:
+- what they feel,
+- where they are,
+- what they are trying to do,
+- and how intelligence can support them quietly, contextually, and safely.
+
+All of this converges into the **GeoNeuroSpatial Engine**:
+- the human layer,
+- the world layer,
+- and the semantic meaning layer.
+
+Together these create spatial intelligence that is understandable, navigable, predictive, and emotionally aware, with on-edge privacy principles at the centre.
+
+---
 
 ## GeoNeuroSpatial Diagram
+
 ```mermaid
 flowchart TD
 
-    %% ===============================
-    %% TITLE NODES (TOP LEVEL)
-    %% ===============================
-    GENIE["<u><b>🤖 Geordie Genie® – AI Companion Layer</b></u>"]
-    REALITY["<u><b>🌍 GeoAR.it® – Reality Layer</b></u>"]
-    LIFE["<u><b>🌈 MetARverse® – Life Layer</b></u>"]
+    GENIE["<u><b>🤖 Geordie Genie - AI Companion Layer</b></u>"]
+    REALITY["<u><b>🌍 GeoAR.it - Reality Layer</b></u>"]
+    LIFE["<u><b>🌈 MetARverse - Life Layer</b></u>"]
 
-    %% ===============================
-    %% DESCRIPTIONS (SECOND LEVEL)
-    %% ===============================
-    GENIE_DESC["A digital twin of <i>you</i> – humour, emotions, memories, values, patterns, intentions, Bio."]
-    REALITY_DESC["A digital twin of the UK – factual, geospatial, infrastructural, live, layered, localised, and open."]
-    LIFE_DESC["A semantic life layer where moods, moments, and memories become part of the world around you."]
+    GENIE_DESC["A digital twin of <i>you</i>: humour, memories, values, habits, intentions, emotion, and bio-context."]
+    REALITY_DESC["A digital twin of the world: factual, geospatial, infrastructural, local, live, layered, and open."]
+    LIFE_DESC["A semantic layer where moods, moments, and memories are anchored to place and context."]
 
-    %% Attach descriptions to titles
     GENIE --> GENIE_DESC
     REALITY --> REALITY_DESC
     LIFE --> LIFE_DESC
 
-    %% ===============================
-    %% CORE ENGINE (POWERING ALL THREE)
-    %% ===============================
-    ENGINE["<b>🧠 GeoNeuroSpatial Engine</b><br/>The AI reasoning substrate powering all layers."]
+    ENGINE["<b>🧠 GeoNeuroSpatial Engine</b><br/>Reasoning substrate that links people, place, and meaning."]
 
-    %% Engine connects upward to each title
     ENGINE --> GENIE
     ENGINE --> REALITY
     ENGINE --> LIFE
-
 ```
 
 ---
 
-## 💠 What GeoAR.it® Is
+## 💠 What GeoAR.it Is
 
-GeoAR.it® is the foundation layer of the **MetARverse®** — a world where:
-
-- places have meaning,  
-- memories attach to locations,  
-- AI understands context rather than guessing,  
-- and the digital world complements real life.
+GeoAR.it is the foundation layer of the MetARverse, where:
+- places carry meaning,
+- memory can anchor to location,
+- AI can reason from context,
+- and digital overlays complement physical life.
 
 It provides:
+- a **real-time digital twin**,
+- **hyperlocal awareness**,
+- **anchors** for places and interactions,
+- and a **structured semantic substrate** for AI and AR.
 
-- A **real-time digital twin** of the UK  
-- **Hyperlocal awareness** (what’s around you right now)  
-- **Anchors** for venues, hotspots, objects, memories, and interactions  
-- A structured, meaningful data layer for AI agents to understand human experience  
+Everything starts with four disciplined building blocks:
 
-Everything begins with the platform’s simple building blocks:
+**Venue  Hotspot  Properties  Model**
 
-**Venue → Hotspot → Hotspot Properties → Prefab**  
-Each one is an anchor point in the real world that the AI and AR layers can attach meaning to.
-
----
-
-## 🧞 Geordie Genie® — Your Companion in the MetARverse®
-
-Geordie Genie represents the human side of the platform:  
-a warm, local, emotionally intelligent character who helps guide the user through their surroundings with humour, empathy, and awareness.
-
-He is the bridge between:
-
-- the real world,  
-- the digital twin, and  
-- the user’s emotional state.
-
-He can remember things for you, keep you safe, point you towards meaningful places, and help encode your experiences using the **MetARverse Semantic Event Protocol**.
+This is now the canonical core model.
 
 ---
 
-## 🗺️ Core Spatial Entities
+## 🧞 Geordie Genie
 
-Below is a simple high-level relationship diagram showing the four key pillars of the GeoAR.it spatial layer:
+Geordie Genie is the human-facing companion layer.
+
+It is designed to:
+- guide,
+- reassure,
+- explain,
+- remember,
+- and personalise support in local context.
+
+Geordie Genie sits between:
+- the user,
+- the reality layer,
+- and the semantic life layer,
+
+so that interaction feels natural and grounded rather than abstract.
+
+---
+
+## 🗺 Core Spatial Entities (Revised)
 
 ### 🧩 MetARverse Core Entities
 
 | Entity | Description |
 |--------|-------------|
-| **Venue** | A real-world location such as a pub, park, shop, train station, university campus, festival ground, golf course, or any identifiable place. It provides the spatial container that hotspots live inside. |
-| **Hotspot** | A point, zone, or interactive object placed within or near a venue. Represents something meaningful such as a stage, taxi rank, medical tent, golf hole, power outlet, queue point, camping area, shop entrance, or bus stand. |
-| **Hotspot Properties** | Metadata describing the hotspot’s live behaviour, attributes, or semantics — such as taxi availability, stage lineup, medic status, bus departure times, safety level, stock levels, prices, queue lengths, or environmental warnings. |
-| **Prefab** | A 3D/AR asset linked to a hotspot. Defines the visual representation, interaction logic, animations, and semantic labels used inside Unity and AR. Multiple hotspots may reuse the same prefab model. |
+| **Venue** | A real-world container location: pub, station, campus, festival ground, park, retail site, civic space. |
+| **Hotspot** | A meaningful point or zone in/near a venue: queue point, stage, tent, stand, route point, object anchor, service point. |
+| **Properties (Generic)** | Unified typed key/value metadata attached to Venue, Hotspot, User/Customer, Company, and other supported entity types. |
+| **Model** | A reusable AR/3D visual + interaction representation linked to hotspots. |
+
+### Architecture note
+
+The platform now uses a **generic Properties model** (`PropertyEntity`) as the primary semantic metadata path.
+
+That means:
+- fewer one-off schema fragments,
+- one indexing/query pattern across entities,
+- and a consistent contract for validation, rule evaluation, and AI interpretation.
+
+Hashtags are represented as a **property type** (`PropertyDataType.HashTag`) rather than requiring dedicated per-entity hashtag join paths.
 
 ---
 
-## 🏡 Venue / ❌ Hotspot / 🧩 Hotspot Properties / 🧊 Prefab relationship
+## 🏡 Venue / 📍 Hotspot / 🧩 Properties / 🧊 Model relationship
 
-In the MetARverse, real-world locations move through a disciplined semantic chain: venues define the space, hotspots define the meaningful points within that space, and hotspot properties reveal the live truth of those points. A venue such as a festival ground or golf course may contain dozens of hotspots, each anchored to a specific physical coordinate. Every hotspot carries one or more hotspot properties describing its real-time state — taxis arriving, medics available, stock levels at a food van, attention warnings, performer schedules, or environmental conditions.
+In the MetARverse, real-world locations move through a semantic chain:
+- Venue defines the space,
+- Hotspot defines meaningful points inside that space,
+- Properties define live truth and semantics,
+- Model defines spatial visual/interaction behaviour.
 
-These properties update automatically through backend systems, IoT feeds, or AI agents acting on behalf of the venue owner. As those updates flow through the platform, hotspots become living data entities, capable of informing navigation, recommendations, safety alerts, crowd modelling, and personalised experiences. This creates a seamless pipeline where real-world events become structured data, structured data becomes semantic meaning, and semantic meaning becomes a responsive, data-rich layer over the physical world. The MetARverse transforms everyday locations into intelligent, context-aware, emotionally and operationally expressive spaces.
+A venue can contain many hotspots.
+Each hotspot can hold many property rows.
+Properties can represent live operational data, human context, status, alerts, logistics, and narrative meaning.
+
+This creates a direct pipeline:
+- real-world state -> structured properties -> semantic meaning -> AR/AI experience.
 
 ```mermaid
 flowchart LR
 
-%% ========================
-%% VENUE
-%% ========================
-VENUE["<u><b>🏡 – Venue</b></u><br/>Geordie Genie Golf Course"]
-click VENUE "https://geoar.it/help#category-Venue-Properties" _blank
+VENUE["<u><b>🏡 Venue</b></u><br/>Spatial container"]
+HS1["<u><b>📍 Hotspot</b></u><br/>Point A"]
+HS2["<u><b>📍 Hotspot</b></u><br/>Point B"]
+MODEL["<u><b>🧊 Model</b></u><br/>Visual + interaction"]
 
-%% ========================
-%% HOTSPOTS
-%% ========================
-HS1["<u><b>❌ – Hotspot</b></u><br/>Hole 1 – Shearer’s Creek"]
-click HS1 "https://geoar.it/help#category-Hotspot-Properties" _blank
-
-HS2["<u><b>❌ – Hotspot</b></u><br/>Hole 2 – Tyne Bridge"]
-click HS2 "https://geoar.it/help#category-Hotspot-Properties" _blank
+subgraph PROPS ["<b>🧩 Properties (Generic)</b>"]
+    P1["Name=QueueLength, Type=Number, Value=12"]
+    P2["Name=TaxiStatus, Type=Text, Value=Arriving"]
+    P3["Name=Tag, Type=HashTag, Value=#festival"]
+    P4["Name=ARCodeMaxScans, Type=ARCodeMaxScans, Value=250"]
+end
 
 VENUE --> HS1
 VENUE --> HS2
-
-%% ========================
-%% PREFAB
-%% ========================
-PREFAB["<u><b>🧊 – Prefab</b></u><br/>Golf Hole Prefab<br/>3D Model"]
-HS1 --> PREFAB
-HS2 --> PREFAB
-
-%% ========================
-%% PROPERTIES FOR HOLE 1
-%% ========================
-subgraph HS1_PROPS ["<b>🧩 – Properties</b><br/>Hole 1"]
-    HS1_P1["🧩 <b>Avg Score</b><br/>4.16"]
-    HS1_P2["🧩 <b>Eagles</b><br/>2"]
-    HS1_P3["🧩 <b>Birdies</b><br/>23"]
-    HS1_P4["🧩 <b>Pars</b><br/>278"]
-end
-
-HS1 --> HS1_PROPS
-
-%% ========================
-%% PROPERTIES FOR HOLE 2
-%% ========================
-subgraph HS2_PROPS ["<b>🧩 – Properties</b><br/>Hole 2"]
-    HS2_P1["🧩 <b>Golfer teeing off</b><br/>Lion Woods"]
-    HS2_P2["🧩 <b>Top 10</b><br/>3"]
-    HS2_P3["🧩 <b>Points</b><br/>950"]
-    HS2_P4["🧩 <b>Average score</b><br/>66.989"]
-    HS2_P5["🧩 <b>Driving accuracy</b><br/>87.5%"]
-end
-
-HS2 --> HS2_PROPS
-
-%% ========================
-%% PROPERTY TYPES USED
-%% ========================
-subgraph PROP_TYPES ["<b>🧩 – Property Types Used</b>"]
-    TYPE_TEXT["🔤 Text"]
-    TYPE_NUM["🔢 Number"]
-    TYPE_DEC["🔣 Decimal Number"]
-end
-
-%% ========================
-%% MAPPINGS
-%% ========================
-HS1_P1 --> TYPE_DEC
-HS1_P2 --> TYPE_NUM
-HS1_P3 --> TYPE_NUM
-HS1_P4 --> TYPE_NUM
-
-HS2_P1 --> TYPE_TEXT
-HS2_P2 --> TYPE_NUM
-HS2_P3 --> TYPE_NUM
-HS2_P4 --> TYPE_DEC
-HS2_P5 --> TYPE_DEC
-```
-
----
-## 🧩 Hotspot Properties
-
-Hotspots in the MetARverse are not limited to a single piece of information. Each hotspot may contain multiple *hotspot property entries*, each describing a real-world object, person, service, or live condition associated with that location. For example, a taxi rank may show several taxis with different capacities and arrival times; a bus stand may expose multiple buses with destinations and fares; a medical tent may list each medic and their availability; and a festival stage may show the full performance lineup. These properties can all be updated automatically by backend systems or AI agents belonging to the hotspot owner, ensuring the information seen in AR is always live, accurate, and context-aware. Instead of users guessing, wandering, or searching for staff, hotspots provide a clear, dynamic window into the real world — turning each location into a living data surface that helps people make decisions instantly.
-
-## 🧩 Hotspot Properties examples
-
-| ❌ Hotspot        | 🧩 Property 1                                      | 🧩 Property 2                                         | 🧩 Property 3                                        |
-|-------------------|----------------------------------------------------|------------------------------------------------------|-----------------------------------------------------|
-| **Taxi Rank**     | 🚕 Taxi #1 – 6 seater – Available                  | 🚕 Taxi #2 – 4 seater – Arriving in 5 mins           | 🚕 Taxi #3 – 8 seater – Busy (ETA 12 mins)          |
-| **Bus Stand**     | 🚌 Bus A – Newcastle @ 13:45 (£15 single)          | 🚌 Bus B – Durham @ 14:10                             | 🚌 Bus C – Delayed – Next due 14:55                 |
-| **Medical Tent**  | 🧑‍⚕️ Medic 1 – Triage – Available                  | 🧑‍⚕️ Medic 2 – Treating (Free in 15 mins)            | 🧑‍⚕️ Medic 3 – Resting (Back at 14:10)             |
-| **Festival Stage**| 🎵 Performer 1 – DJ Nova (20:00)                   | 🎵 Performer 2 – Skyline (21:30)                     | 🎵 Performer 3 – Neon Pulse (23:00)                 |
-| **Food Van**      | 🌭 Hotdog – £4 – 14 left                           | 🍟 Fries – £3 – Low Stock                            | 🥤 Drinks – £2.50 – Full Stock                      |
-| **Camping Area**  | 🏕️ Zone A – 5 plots free                           | 🏕️ Zone B – Fully Booked                             | 🏕️ Zone C – 12 plots free                           |
-| **Merch Tent**    | 🛍️ Tent A – Open 10am–6pm                          | 🛍️ Tent B – Opens 12pm–8pm                           | 🛍️ Tent C – Closed Today                            |
-| **Queue Point**   | 🍺 Bar A – Queue: 12 people                        | 🍺 Bar B – Queue: 4 people                           | 🎟️ Tokens Desk – No queue                           |
-| **Safety Zone**   | ⚠️ Alert: High Winds                               | 👥 Crowd Density: Heavy                              | 🩺 Medical Status: Safe                             |
-
-
-##  🧩 Hotspot Property Types
-
-| 🧩 PropertyDataType | Description | Purpose / When Used |
-|---------------------|-------------|----------------------|
-| 🔤 **Text** | Free text | Names, statuses, destinations, messages. |
-| 🔢 **Number** | Whole number | Queue length, stock level, tallies. |
-| ✳️ **HexNumber** | Hexadecimal value | Device IDs, beacon codes, sensor identifiers. |
-| 🔣 **DecimalNumber** | Floating/decimal | Prices, scores, percentages, distances. |
-| 📅 **Date** | Calendar date | Single-day events, schedules, opening days. |
-| ⏰ **Time** | Time of day | Bus departures, ETA, performance start times. |
-| 🕰️ **DateTime** | Combined timestamp | Real-time updates, transport timetables. |
-| 📞 **PhoneNumber** | Contact telephone | Security, vendor, emergency contact. |
-| 📧 **EmailAddress** | Email string | Vendor contact, staff email, bookings. |
-| 🔗 **Url** | External link | Menus, livestreams, ticketing, maps. |
-| 🖼️ **ImageUrl** | Link to image | Posters, lineup cards, photos. |
-| 🏣 **PostalCode** | UK postcode | Geocoded hotspot anchor reference. |
-
-### 🧩 Hotspot Property Data Type Diagram
-
-```mermaid
-flowchart LR
-
-    TITLE["<u><b>🧩 Property Data Types</b></u><br/>How hotspot properties store information"]
-
-    %% TEXTUAL TYPES
-    TEXT["🔤 <b>Text</b><br/><i>Free-form words & labels</i>"]
-    NUMBER["🔢 <b>Whole Number</b><br/><i>Integer values</i>"]
-    HEXNUM["✳️ <b>Hex Number</b><br/><i>Hexadecimal values</i>"]
-    DECIMAL["🔣 <b>Decimal Number</b><br/><i>Float / measurable values</i>"]
-
-    %% TIME TYPES
-    DATE["📅 <b>Date</b><br/><i>Calendar date</i>"]
-    TIME["⏰ <b>Time</b><br/><i>Time of day</i>"]
-    DATETIME["🕰️ <b>Date & Time</b><br/><i>Full timestamp</i>"]
-
-    %% CONTACT TYPES
-    PHONE["📞 <b>Phone Number</b>"]
-    EMAIL["📧 <b>Email</b>"]
-    URLNODE["🔗 <b>URL</b>"]
-    IMAGEURL["🖼️ <b>Image URL</b>"]
-
-    %% LOCATION
-    POSTCODE["🏣 <b>Postal Code</b>"]
-
-    TITLE --> TEXT
-    TITLE --> NUMBER
-    TITLE --> HEXNUM
-    TITLE --> DECIMAL
-
-    TITLE --> DATE
-    TITLE --> TIME
-    TITLE --> DATETIME
-
-    TITLE --> PHONE
-    TITLE --> EMAIL
-    TITLE --> URLNODE
-    TITLE --> IMAGEURL
-
-    TITLE --> POSTCODE
+HS1 --> MODEL
+HS2 --> MODEL
+HS1 --> PROPS
+HS2 --> PROPS
 ```
 
 ---
 
-## 🧩 Website Menu 
+## 🧩 Properties (Generic)
+
+Hotspots are no longer limited to one data point.
+Each hotspot can carry many properties, and that same property mechanism applies across other entity types too.
+
+Examples:
+- taxi rank: availability + ETA + capacity
+- bus stand: destination + departure + delay status
+- stage: lineup + start times + current performer
+- medical point: triage status + queue + on-shift staff
+- queue point: live count + trend + expected wait
+- safety point: warning state + crowd pressure + advisory level
+
+Properties can be updated by:
+- owner systems,
+- integrations,
+- sensors,
+- service operators,
+- or platform agents.
+
+This makes each mapped point a live semantic surface, not static text.
+
+---
+
+## 🧩 Property examples table
+
+| Hotspot | Property 1 | Property 2 | Property 3 |
+|---|---|---|---|
+| 🚕 Taxi Rank | 🚕 Taxi A - 6 seater - Available | 🚕 Taxi B - 4 seater - ETA 5m | 🚕 Taxi C - 8 seater - Busy |
+| 🚌 Bus Stand | 🚌 Bus A - Newcastle - 13:45 | 🚌 Bus B - Durham - 14:10 | 🚌 Bus C - Delayed |
+| 🏥 Medical Tent | 🧑‍⚕️ Medic 1 - Triage - Available | 🧑‍⚕️ Medic 2 - Treating | 🧑‍⚕️ Medic 3 - Returning 14:10 |
+| 🎵 Festival Stage | 🎤 Performer 1 - 20:00 | 🎤 Performer 2 - 21:30 | 🎤 Performer 3 - 23:00 |
+| 🌭 Food Van | 🌭 Hotdog - 14 left | 🍟 Fries - Low stock | 🥤 Drinks - Full stock |
+| ⏱ Queue Point | 👥 Queue=12 | ⌛ Wait=8m | 📈 Trend=Rising |
+| ⚠️ Safety Zone | 🌬 Wind=High | 👥 Crowd=Heavy | 🟡 Status=Monitor |
+
+---
+
+## 🧩 Property Data Types (selected)
+
+| PropertyDataType | Description | Typical use |
+|---|---|---|
+| 🔤 Text | Free text | names, labels, status |
+| 🔢 Number | Whole number | counts, tallies, queue size |
+| 🔣 DecimalNumber | Decimal value | scores, percentages, prices |
+| 📅 Date / ⏰ Time / 🕰 DateTime | Temporal values | schedules, ETA, event timing |
+| 🔗 Url / 🖼 ImageUrl / 🎬 VideoUrl | Linked media/resource | docs, posters, streams |
+| 📮 PostalCode / 📱 MobilePhone | structured contact/location | routing and contact workflows |
+| 🏷 HashTag | hashtag semantic value | thematic tagging and discovery |
+| ✅ Boolean | true/false flags | enabled states, operational toggles |
+| 🧾 Html / 🎨 Css | rich display + linked style | managed content rendering |
+| 📡 Ble | BLE identifier semantics | local device/beacon integrations |
+| 🔐 ARCodePassword / 🔢 ARCodeMaxScans / 📍 ARCodeGpsRadiusMeters | ARCode security controls | secure and bounded ARCode access |
+| 🏆 Collectable / ⭐ CollectablePoints | gamification controls | progression and reward systems |
 
 ```mermaid
 flowchart LR
+    T["🧩 Property Data Types"] --> A["🔤 Text"]
+    T --> B["🔢 Number"]
+    T --> C["🔣 DecimalNumber"]
+    T --> D["📅 Date/Time/DateTime"]
+    T --> E["🔗 Url/Media"]
+    T --> F["🏷 HashTag"]
+    T --> G["✅ Boolean"]
+    T --> H["📡 BLE"]
+    T --> I["🔐 ARCode Security Types"]
+```
 
-    %% MAIN MENU BLOCK
+---
+
+## 🧭 Website Menu (concept)
+
+```mermaid
+flowchart LR
     MAIN["<u>🌍 MAIN MENU</u>"]
-
     MAIN --> LOGIN["<u>🔑 Log in / Register</u>"]
     MAIN --> HOME["<u>🏡 Home</u>"]
     MAIN --> VENUES["<u>📍 Venues</u>"]
-    MAIN --> MAP["<u>🗺️ Map</u>"]
-    MAIN --> TRANSPORT["<u>✈️ Transport</u>"]
-    MAIN --> WORLDS["<u>🌌 MetARverse® Worlds</u>"]
+    MAIN --> MAP["<u>🗺 Map</u>"]
+    MAIN --> TRANSPORT["<u>🚍 Transport</u>"]
+    MAIN --> WORLDS["<u>🌌 MetARverse Worlds</u>"]
     MAIN --> API["<u>📀 API</u>"]
     MAIN --> HELP["<u>📁 Help</u>"]
-    MAIN --> FACEBOOK["<u>👀 Facebook</u>"]
-    MAIN --> QUOTES["<u>📋 Quotes</u>"]
-    MAIN --> FEEDBACK["<u>✍️ Feedback</u>"]
+    MAIN --> FEEDBACK["<u>💬 Feedback</u>"]
     MAIN --> PRIVACY["<u>🔐 Privacy</u>"]
-    MAIN --> TERMS["<u>📔 T&amp;C</u>"]
-
-    %% HELP SYSTEM BLOCK (to the right)
-    HELP --> HS_HOTSPOT["<u>❌ Hotspot / Documentation</u>"]
-    HELP --> HS_VENUE["<u>🏡 Venue / Documentation</u>"]
-    HELP --> HS_API["<u>🖥️ API / Documentation</u>"]
-    HELP --> HS_PINNED["<u>📄 Pinned / Blog</u>"]
-    HELP --> HS_PLATFORM["<u>🖥️ Platform / Documentation</u>"]
-    HELP --> HS_MARKER["<u>🔰 Marker / Documentation</u>"]
-    HELP --> HS_MISC["<u>🧩 Misc / 500 / Blog</u>"]
-    HELP --> HS_MAPS["<u>🗺️ Maps / Blog & Docs</u>"]
-    HELP --> HS_INVESTOR["<u>💼 Investor / Blog</u>"]
-
-    %% Example sub-pages
-    HS_HOTSPOT --> HO_OVERVIEW["<u>Hotspot overview</u>"]
-    HS_VENUE   --> VENUE_ADD_GOOGLE["<u>Add local venues to Google Calendar</u>"]
-    HS_API     --> API_ENDPOINTS["<u>API Endpoints</u>"]
-
-    %% LINKS — parser safe (no tooltip strings)
-    click LOGIN "https://geoar.it/Identity/Account/Login" _blank
-    click HOME "https://geoar.it/" _blank
-    click VENUES "https://geoar.it/venues" _blank
-    click MAP "https://geoar.it/map" _blank
-    click TRANSPORT "https://geoar.it/transport" _blank
-    click WORLDS "https://geoar.it/worlds" _blank
-    click API "https://geoar.it/api" _blank
-    click HELP "https://geoar.it/help" _blank
-    click FACEBOOK "https://facebook.com/Metaverse.Ian.Foster" _blank
-    click QUOTES "https://geoar.it/quotes" _blank
-    click FEEDBACK "https://geoar.it/feedback" _blank
-    click PRIVACY "https://geoar.it/privacy" _blank
-    click TERMS "https://geoar.it/terms" _blank
-
-    click HS_HOTSPOT "https://geoar.it/help#category-Hotspot-Documentation" _blank
-    click HS_VENUE "https://geoar.it/help#category-Venue-Documentation" _blank
-    click HS_API "https://geoar.it/help#category-Api-Documentation" _blank
-    click HS_PINNED "https://geoar.it/help#category-Pinned-Blog" _blank
-    click HS_PLATFORM "https://geoar.it/help#category-Platform-Documentation" _blank
-    click HS_MARKER "https://geoar.it/help#category-Marker-Documentation" _blank
-    click HS_MISC "https://geoar.it/help" _blank
-    click HS_MAPS "https://geoar.it/help#category-Maps-Blog-Docs" _blank
-    click HS_INVESTOR "https://geoar.it/help#category-Investor-Blog" _blank
-
-    click HO_OVERVIEW "https://geoar.it/help/12/Hotspot-overview" _blank
-    click VENUE_ADD_GOOGLE "https://geoar.it/help/28/Add-local-venues-to-your-Google-calendar" _blank
-    click API_ENDPOINTS "https://geoar.it/help/Api/Endpoints" _blank
 ```
 
-----
+---
 
-## 🧩 MetARverse® Worlds
+## 🌌 MetARverse Worlds
+
 ```mermaid
 graph LR
-    A["<u>MetARverse® Worlds</u>"] --> B["<u>📍 AR Information</u>"]
+    A["<u>MetARverse Worlds</u>"] --> B["<u>📍 AR Information</u>"]
     A --> C["<u>🎮 AR Games</u>"]
-    A --> D["<u>🕶️ AR Experiences</u>"]
+    A --> D["<u>🕶 AR Experiences</u>"]
     A --> E["<u>🌀 AR Fantasy Portal</u>"]
     A --> F["<u>🎨 AR Art</u>"]
     A --> G["<u>🎥 Cinematic Worlds</u>"]
     A --> H["<u>🌐 MCP World Layer</u>"]
-    A --> I["<u>🛠️ AR Tools World</u>"]
+    A --> I["<u>🛠 AR Tools World</u>"]
     A --> J["<u>📸 MetARverse Moment Layer</u>"]
-
-    %% AR Information Subitems
-    B --> B2[🚌 Bus · Train · Underground Info]
-    B --> B3[🚓 Historical Crime Hotspots]
-    B --> B4[🏡 Sale & Rental Property Details]
-    B --> B5[📮 View Postcodes & Property IDs]
-    B --> B6[🔌 Find Nearest EV Chargepoint]
-    B --> B7[🎵 Gigs · Clubs · Festivals]
-    B --> B8[🚗 AutoPi Telemetrics Integration]
-
-    %% Clickable Links (Absolute URLs)
-    click A "https://geoar.it/worlds/ARInformation" "_self"
-    click B "https://geoar.it/worlds/ARInformation" "_self"
-    click C "https://geoar.it/worlds/ARGame" "_self"
-    click D "https://geoar.it/worlds/ARExperience" "_self"
-    click E "https://geoar.it/worlds/ARPortal" "_self"
-    click F "https://geoar.it/worlds/ARArtWork" "_self"
-    click G "https://geoar.it/worlds/VRCinematic" "_self"
-    click H "https://geoar.it/worlds/MCP" "_self"
-    click I "https://geoar.it/worlds/Tools" "_self"
-    click J "https://geoar.it/worlds/Moments" "_self"
-
 ```
+ 
