@@ -1,4 +1,3 @@
- 
 # 👓🌍🧠 **GeoNeuroSpatial Intelligence Engine (v3)**
 
 (Public issues repository: https://github.com/GeoARit/Public)
@@ -183,6 +182,25 @@ This makes each mapped point a live semantic surface, not static text.
 
 ---
 
+## 🧩 Entity -> Properties overview
+
+```mermaid
+flowchart LR
+    VENUE["🏡 Venue"] --> PROPS["🧩 Properties (PropertyEntity)"]
+    HOTSPOT["📍 Hotspot"] --> PROPS
+    CUSTOMER["🧑 Customer"] --> PROPS
+    USER["👤 User"] --> PROPS
+    COMPANY["🏢 Company"] --> PROPS
+
+    PROPS --> TYPE["Type (PropertyDataType)"]
+    PROPS --> NAME["Name"]
+    PROPS --> VALUE["Value"]
+    PROPS --> ENTITY["EntityType + EntityId"]
+    PROPS --> RULES["Enabled / Validation / Rules"]
+```
+
+---
+
 ## 🧩 Property examples table
 
 | Hotspot | Property 1 | Property 2 | Property 3 |
@@ -197,14 +215,17 @@ This makes each mapped point a live semantic surface, not static text.
 
 ---
 
-## 🧩 Property Data Types (selected)
+## 🧩 Property Data Types (full platform set)
 
 | PropertyDataType | Description | Typical use |
 |---|---|---|
 | 🔤 Text | Free text | names, labels, status |
 | 🔢 Number | Whole number | counts, tallies, queue size |
+| 🔣 HexNumber | Hexadecimal value | identifiers, hardware/device signatures |
 | 🔣 DecimalNumber | Decimal value | scores, percentages, prices |
 | 📅 Date / ⏰ Time / 🕰 DateTime | Temporal values | schedules, ETA, event timing |
+| 📧 EmailAddress | Email string | contact and notifications |
+| 📞 PhoneNumber / 📱 MobilePhone | Phone/contact values | support and escalation routes |
 | 🔗 Url / 🖼 ImageUrl / 🎬 VideoUrl | Linked media/resource | docs, posters, streams |
 | 📮 PostalCode / 📱 MobilePhone | structured contact/location | routing and contact workflows |
 | 🏷 HashTag | hashtag semantic value | thematic tagging and discovery |
@@ -213,18 +234,24 @@ This makes each mapped point a live semantic surface, not static text.
 | 📡 Ble | BLE identifier semantics | local device/beacon integrations |
 | 🔐 ARCodePassword / 🔢 ARCodeMaxScans / 📍 ARCodeGpsRadiusMeters | ARCode security controls | secure and bounded ARCode access |
 | 🏆 Collectable / ⭐ CollectablePoints | gamification controls | progression and reward systems |
+| 🧠 Grokipedia | Knowledge/semantic text field | long-form AI-readable context |
 
 ```mermaid
 flowchart LR
     T["🧩 Property Data Types"] --> A["🔤 Text"]
     T --> B["🔢 Number"]
+    T --> B2["🔣 HexNumber"]
     T --> C["🔣 DecimalNumber"]
     T --> D["📅 Date/Time/DateTime"]
+    T --> D2["📧 Email + 📞 Phone"]
     T --> E["🔗 Url/Media"]
     T --> F["🏷 HashTag"]
     T --> G["✅ Boolean"]
+    T --> G2["🧾 Html/Css"]
     T --> H["📡 BLE"]
     T --> I["🔐 ARCode Security Types"]
+    T --> J["🏆 Collectable"]
+    T --> K["🧠 Grokipedia"]
 ```
 
 ---
@@ -262,4 +289,3 @@ graph LR
     A --> I["<u>🛠 AR Tools World</u>"]
     A --> J["<u>📸 MetARverse Moment Layer</u>"]
 ```
- 
