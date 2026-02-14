@@ -2,7 +2,7 @@
 
 (Public issues repository: https://github.com/GeoARit/Public)
 
-GeoAR.it is built on a simple belief: technology should help people move through the world with clarity, confidence, and emotional grounding.
+GeoAR.it® is built on a simple belief: technology should help people move through the world with clarity, confidence, and emotional grounding.
 
 It blends:
 - **geospatial awareness**,
