@@ -52,9 +52,9 @@ flowchart TD
 
 ---
 
-## 💠 What GeoAR.it Is
+## 💠 What GeoAR.it® Is
 
-GeoAR.it is the foundation layer of the MetARverse, where:
+GeoAR.it® is the foundation layer of the MetARverse, where:
 - places carry meaning,
 - memory can anchor to location,
 - AI can reason from context,
@@ -74,7 +74,7 @@ This is now the canonical core model.
 
 ---
 
-## 🧞 Geordie Genie
+## 🧞 Geordie Genie®
 
 Geordie Genie is the human-facing companion layer.
 
@@ -96,7 +96,7 @@ so that interaction feels natural and grounded rather than abstract.
 
 ## 🗺 Core Spatial Entities (Revised)
 
-### 🧩 MetARverse Core Entities
+### 🧩 MetARverse® Core Entities
 
 | Entity | Description |
 |--------|-------------|
