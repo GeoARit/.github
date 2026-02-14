@@ -207,11 +207,11 @@ flowchart LR
 |---|---|---|---|
 | 🚕 Taxi Rank | 🚕 Taxi A - 6 seater - Available | 🚕 Taxi B - 4 seater - ETA 5m | 🚕 Taxi C - 8 seater - Busy |
 | 🚌 Bus Stand | 🚌 Bus A - Newcastle - 13:45 | 🚌 Bus B - Durham - 14:10 | 🚌 Bus C - Delayed |
-| 🏥 Medical Tent | 🧑‍⚕️ Medic 1 - Triage - Available | 🧑‍⚕️ Medic 2 - Treating | 🧑‍⚕️ Medic 3 - Returning 14:10 |
+| 🏥 Medical Tent | 🧑 Medic 1 - Triage - Available | 🧑 Medic 2 - Treating | 🧑 Medic 3 - Returning 14:10 |
 | 🎵 Festival Stage | 🎤 Performer 1 - 20:00 | 🎤 Performer 2 - 21:30 | 🎤 Performer 3 - 23:00 |
 | 🌭 Food Van | 🌭 Hotdog - 14 left | 🍟 Fries - Low stock | 🥤 Drinks - Full stock |
-| ⏱ Queue Point | 👥 Queue=12 | ⌛ Wait=8m | 📈 Trend=Rising |
-| ⚠️ Safety Zone | 🌬 Wind=High | 👥 Crowd=Heavy | 🟡 Status=Monitor |
+| 🚶 Queue Point | 👥 Queue=12 | ⏱ Wait=8m | 📈 Trend=Rising |
+| 🛟 Safety Zone | 🌬 Wind=High | 👥 Crowd=Heavy | 🟡 Status=Monitor |
 
 ---
 
@@ -220,53 +220,28 @@ flowchart LR
 | PropertyDataType | Description | Typical use |
 |---|---|---|
 | 🔤 Text | Free text | names, labels, status |
-  | 🔢 Number | Whole number | counts, tallies, queue size |
-  | 🔣 HexNumber | Hexadecimal value | identifiers, hardware/device signatures |
-  | 🔣 DecimalNumber | Decimal value | scores, percentages, prices |
-  | 📅 Date /  Time / 🕰 DateTime | Temporal values | schedules, ETA, event timing |
-  | 📧 EmailAddress | Email string | contact and notifications |
-  | 📞 PhoneNumber / 📱 MobilePhone | Phone/contact values | support and escalation routes |
-  | 🔗 Url / 🖼 ImageUrl / 🎬 VideoUrl | Linked media/resource | docs, posters, streams |
-  | 📮 PostalCode / 📱 MobilePhone | structured contact/location | routing and contact workflows |
-  | 🏷 HashTag | hashtag semantic value | thematic tagging and discovery |
-  |  Boolean | true/false flags | enabled states, operational toggles |
-  | 🧾 Html / 🎨 Css | rich display + linked style | managed content rendering |
-  | 📡 Ble | BLE identifier semantics | local device/beacon integrations |
-  | 🔐 ARCodePassword / 🔢 ARCodeMaxScans / 📍 ARCodeGpsRadiusMeters | ARCode security controls | secure and bounded ARCode
-  access |
-  | 🏆 Collectable /  CollectablePoints | gamification controls | progression and reward systems |
-  | 🧠 Grokipedia | Knowledge/semantic text field | long-form AI-readable context |
-
-
-• | PropertyDataType | Description | Typical use |
-  |---|---|---|
-  | 🔤 Text | Free text | names, labels, status |
-  | 🔢 Number | Whole number | counts, tallies, queue size |
-  | 🔣 HexNumber | Hexadecimal value | identifiers, hardware/device signatures |
-  | 🔣 DecimalNumber | Decimal value | scores, percentages, prices |
-  | 📅 Date / 🕰 Time / 📆 DateTime | Temporal values | schedules, ETA, event timing |
-  | 📧 EmailAddress | Email string | contact and notifications |
-  | 📞 LandlinePhone / 📱 MobilePhone | Phone/contact values | support and escalation routes |
-  | 🔗 Url / 🖼 ImageUrl / 🎬 VideoUrl / 🎵 AudioUrl / 📁 FileUrl | Linked media/resource | docs, posters, streams, downloads
-  |
-  | 📮 PostalCode / 🏠 PostcodeHouseNumber / 🏡 PostcodeHouseName / 📍 Address | Structured contact/location | routing,
-  lookup, and contact workflows |
-  | 🏷 HashTag | Hashtag semantic value | thematic tagging and discovery |
-  | ✅ Boolean | True/false flags | enabled states, operational toggles |
-  | 🧾 Html / 🎨 Css | Rich display + linked style | managed content rendering |
-  | 📡 Ble | BLE identifier semantics | local device/beacon integrations |
-  | 🔐 ARCodePassword / # ARCodePasswordHash / 🧂 ARCodePasswordSalt / 🔢 ARCodeMaxScans / 📍 ARCodeGpsRadiusMeters | ARCode
-  security controls | secure and bounded ARCode access |
-  | 🏆 Collectable / 🥇 CollectablePoints | Gamification controls | progression and reward systems |
-  | 🧠 Grokipedia | Knowledge/semantic text field | long-form AI-readable context |
-  | 📆 DateRange / 🕰 TimeRange / 📆 DateTimeRange | Temporal ranges | operating windows, validity periods |
-  | 🎨 StartColourHex / 🎨 EndColourHex | Colour values | gradients and visual theming |
-  | 🚗 CarMake / 🚘 CarModel / 🧩 ServiceType | Domain-specific metadata | transport/service categorisation |
-  | 🧠 Ontology / 🧠 SemanticEventType / 🧠 SemanticEventStatus / 🧭 SemanticAnchorType / 🧭 SemanticAnchorId / 🧠
-  ContextClusterId / 🧠 EngramId | Semantic graph fields | knowledge linking and semantic indexing |
-  | 💷 UkTaxCode | UK tax reference | billing/compliance classification |
-  | 🌐 WebsiteUrl / 🌐 MetARverseWebsiteUrl | Website links | public site and MetARverse URL references |
-  | 🗓 Calender / 🎟 Tickets | Event links | scheduling and ticketing endpoints |
+| 🔢 Number | Whole number | counts, tallies, queue size |
+| 🔣 HexNumber | Hexadecimal value | identifiers, hardware/device signatures |
+| 🔣 DecimalNumber | Decimal value | scores, percentages, prices |
+| 📅 Date / 🕰 Time / 📆 DateTime | Temporal values | schedules, ETA, event timing |
+| 📧 EmailAddress | Email string | contact and notifications |
+| 📞 LandlinePhone / 📱 MobilePhone | Phone/contact values | support and escalation routes |
+| 🔗 Url / 🖼 ImageUrl / 🎬 VideoUrl / 🎵 AudioUrl / 📁 FileUrl | Linked media/resource | docs, posters, streams, downloads |
+| 📮 PostalCode / 🏠 PostcodeHouseNumber / 🏡 PostcodeHouseName / 📍 Address | Structured contact/location | routing, lookup, and contact workflows |
+| 🏷 HashTag | Hashtag semantic value | thematic tagging and discovery |
+| ✅ Boolean | True/false flags | enabled states, operational toggles |
+| 🧾 Html / 🎨 Css | Rich display + linked style | managed content rendering |
+| 📡 Ble | BLE identifier semantics | local device/beacon integrations |
+| 🔐 ARCodePassword / # ARCodePasswordHash / 🧂 ARCodePasswordSalt / 🔢 ARCodeMaxScans / 📍 ARCodeGpsRadiusMeters | ARCode security controls | secure and bounded ARCode access |
+| 🏆 Collectable / 🥇 CollectablePoints | Gamification controls | progression and reward systems |
+| 🧠 Grokipedia | Knowledge/semantic text field | long-form AI-readable context |
+| 📆 DateRange / 🕰 TimeRange / 📆 DateTimeRange | Temporal ranges | operating windows, validity periods |
+| 🎨 StartColourHex / 🎨 EndColourHex | Colour values | gradients and visual theming |
+| 🚗 CarMake / 🚘 CarModel / 🧩 ServiceType | Domain-specific metadata | transport/service categorisation |
+| 🧠 Ontology / 🧠 SemanticEventType / 🧠 SemanticEventStatus / 🧭 SemanticAnchorType / 🧭 SemanticAnchorId / 🧠 ContextClusterId / 🧠 EngramId | Semantic graph fields | knowledge linking and semantic indexing |
+| 💷 UkTaxCode | UK tax reference | billing/compliance classification |
+| 🌐 WebsiteUrl / 🌐 MetARverseWebsiteUrl | Website links | public site and MetARverse URL references |
+| 🗓 Calender / 🎟 Tickets | Event links | scheduling and ticketing endpoints |
 
 ```mermaid
 flowchart LR
@@ -274,16 +249,19 @@ flowchart LR
     T --> B["🔢 Number"]
     T --> B2["🔣 HexNumber"]
     T --> C["🔣 DecimalNumber"]
-    T --> D["📅 Date/Time/DateTime"]
-    T --> D2["📧 Email + 📞 Phone"]
-    T --> E["🔗 Url/Media"]
-    T --> F["🏷 HashTag"]
-    T --> G["✅ Boolean"]
-    T --> G2["🧾 Html/Css"]
-    T --> H["📡 BLE"]
-    T --> I["🔐 ARCode Security Types"]
-    T --> J["🏆 Collectable"]
-    T --> K["🧠 Grokipedia"]
+    T --> D["📅 Date / 🕰 Time / 📆 DateTime"]
+    T --> D2["📆 DateRange / 🕰 TimeRange / 📆 DateTimeRange"]
+    T --> E["📧 EmailAddress / 📞 LandlinePhone / 📱 MobilePhone"]
+    T --> F["🔗 Url / 🖼 ImageUrl / 🎬 VideoUrl / 🎵 AudioUrl / 📁 FileUrl"]
+    T --> G["📮 PostalCode / 🏠 PostcodeHouseNumber / 🏡 PostcodeHouseName / 📍 Address"]
+    T --> H["🏷 HashTag"]
+    T --> I["✅ Boolean"]
+    T --> J["🧾 Html / 🎨 Css"]
+    T --> K["📡 Ble"]
+    T --> L["🔐 ARCode Security Types"]
+    T --> M["🏆 Collectable"]
+    T --> N["🧠 Grokipedia"]
+    T --> O["🎨 Colour / Domain / Semantic / Website / Event"]
 ```
 
 ---
