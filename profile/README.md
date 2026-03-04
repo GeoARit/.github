@@ -1,4 +1,4 @@
-# 👓🌍🧠 **GeoNeuroSpatial® Intelligence Engine**
+# 👓🧠🌍 **GeoNeuroSpatial® Intelligence Engine**
 
 (Public issues repository: https://github.com/GeoARit/Public)
 
